@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elven Spirit — proyecto de personaje 3D estilizado de Pablo Escribano.">
+  <title>Elven Spirit — Pablo Escribano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}.elf-hero>img{object-position:center}.elf-hero .project-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.16) 72%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 55%)}.character-gallery{display:grid;gap:80px;margin-bottom:140px}.character-showcase{margin:0}.character-showcase img{display:block;width:100%;height:auto;border:1px solid #292929}.character-showcase figcaption{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:#fff;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px}.character-points{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:140px}.character-points article{padding:42px 32px;border-right:1px solid var(--line)}.character-points article:last-child{border-right:0}.character-points span{color:var(--acid);font:11px var(--display)}.character-points h3{font:20px var(--display);text-transform:uppercase;margin:22px 0 12px}.character-points p{color:var(--muted);font-size:13px;margin:0}.character-note{display:grid;grid-template-columns:1.1fr .9fr;gap:9vw;padding:120px 0 140px;border-top:1px solid var(--line)}.character-note h2{font:clamp(44px,5.6vw,84px)/.95 var(--display);letter-spacing:-4px;text-transform:uppercase;margin:0}.character-note h2 span{color:transparent;-webkit-text-stroke:1px #777}.character-note>div{color:var(--muted);padding-top:10px}.character-note .lead{color:var(--text);font-size:22px;margin-top:0}@media(max-width:900px){.character-points{grid-template-columns:1fr}.character-points article{border-right:0;border-bottom:1px solid var(--line)}.character-points article:last-child{border-bottom:0}.character-note{grid-template-columns:1fr}}@media(max-width:520px){.brand-logo{width:155px;height:42px}.character-note h2{letter-spacing:-2px}.character-gallery{width:100%;gap:50px;margin-bottom:90px}.character-showcase figcaption{padding:0 14px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html#inicio" aria-label="Ir al inicio"><img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links"><a href="index.html#inicio">Inicio</a><a class="active" href="index.html#proyectos">Proyectos</a><a href="index.html#sobre-mi">Sobre mí</a><a href="index.html#contacto">Contacto</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero elf-hero">
+      <img src="assets/projects/elf/Vistas.jpg" alt="Vistas frontal y posterior del guerrero elfo">
+      <div class="project-hero-shade"></div>
+      <div class="project-hero-copy section-shell">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow"><span></span> Stylized character · 3D art</p>
+        <h1>Elven<br><em>Spirit</em></h1>
+      </div>
+      <span class="project-scroll">Explorar proyecto ↓</span>
+    </section>
+
+    <section class="project-overview section-shell">
+      <div class="project-overview-title"><p class="section-index">01 / Overview</p><h2>Fantasía<br><span>estilizada.</span></h2></div>
+      <div class="project-overview-copy">
+        <p class="overview-lead">Un guerrero elfo 3D construido alrededor de una silueta compacta, expresiva y fácil de reconocer.</p>
+        <p>Las proporciones exageradas, la espada vertical y las líneas mágicas que envuelven al personaje aportan energía a la pose. El contraste entre azules intensos, cuero rojizo y cabello claro ayuda a separar cada capa del diseño.</p>
+        <dl class="project-facts"><div><dt>Proyecto</dt><dd>Personal</dd></div><div><dt>Disciplina</dt><dd>3D Character Art</dd></div><div><dt>Estilo</dt><dd>Stylized Fantasy</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="character-gallery section-shell" aria-label="Galería del proyecto Elven Spirit">
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Detalle.jpg" alt="Render de detalle del guerrero elfo" loading="lazy">
+        <figcaption><span>Render principal</span><span>Character detail</span></figcaption>
+      </figure>
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Pose en T.jpg" alt="Modelo del guerrero elfo presentado en pose en T" loading="lazy">
+        <figcaption><span>Desarrollo del personaje</span><span>Pose en T</span></figcaption>
+      </figure>
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Texturas.jpg" alt="Topología y mapas de texturas del guerrero elfo" loading="lazy">
+        <figcaption><span>Materiales y texturas</span><span>Texture breakdown</span></figcaption>
+      </figure>
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Vistas.jpg" alt="Vistas finales frontal y posterior del guerrero elfo" loading="lazy">
+        <figcaption><span>Vistas finales</span><span>Front · Back</span></figcaption>
+      </figure>
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Vistas en clay.jpg" alt="Vistas clay frontal y posterior del guerrero elfo" loading="lazy">
+        <figcaption><span>Vistas clay</span><span>Form &amp; volume</span></figcaption>
+      </figure>
+      <figure class="character-showcase">
+        <img src="assets/projects/elf/Vistas wireframe.jpg" alt="Vistas wireframe frontal y posterior del guerrero elfo" loading="lazy">
+        <figcaption><span>Vistas wireframe</span><span>Topology</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="character-points section-shell" aria-label="Claves del diseño">
+      <article><span>01</span><h3>Silhouette</h3><p>La espada, las orejas, el cabello y las grandes botas construyen una silueta compacta y reconocible.</p></article>
+      <article><span>02</span><h3>Shape language</h3><p>Las proporciones caricaturizadas y las formas redondeadas equilibran fuerza, agilidad y personalidad.</p></article>
+      <article><span>03</span><h3>Color &amp; effects</h3><p>La paleta fría del personaje contrasta con el efecto mágico cálido que guía la mirada alrededor de la pose.</p></article>
+    </section>
+
+    <section class="character-note section-shell">
+      <h2>Acción desde<br><span>cada ángulo.</span></h2>
+      <div><p class="lead">La pose de combate y el recorrido del efecto mágico convierten una presentación frontal y posterior en una composición dinámica.</p><p>El desglose en clay y wireframe permite observar por separado el volumen, la construcción de la silueta y la topología que sostiene el resultado final.</p></div>
+    </section>
+
+    <section class="project-next section-shell"><p class="section-index">02 / Fin del proyecto</p><h2>¿Hablamos de<br>3D art?</h2><div><a href="index.html#contacto">Contactar ↗</a><a href="index.html#proyectos">Volver al portfolio ↑</a></div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.artstation.com/artwork/K3OwJX" target="_blank" rel="noreferrer">ArtStation ↗</a><a href="index.html">Inicio</a></div></footer>
+</body>
+</html>

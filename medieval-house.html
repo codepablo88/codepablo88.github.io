@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adaptative Medieval House Tool — breakdown del sistema procedural creado por Pablo Escribano.">
+  <title>Adaptative Medieval House Tool — Pablo Escribano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+  <style>.brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}@media(max-width:520px){.brand-logo{width:155px;height:42px}}</style>
+  <style>
+    .process-note{width:min(660px,80%);display:grid;grid-template-columns:150px 1fr;gap:32px;margin:5px 0 5px 8%;padding:28px 0;border-top:1px solid #4b4b48;border-bottom:1px solid #4b4b48}.process-note-right{margin-left:auto;margin-right:8%}.process-note-wide{width:min(760px,90%);margin:55px auto 0}.process-note span{color:var(--acid);font-size:10px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}.process-note p{margin:0;color:#c6c6c1;font-size:17px}.project-conclusion{display:flex;justify-content:space-between;gap:60px;align-items:flex-end;margin-top:70px;padding:38px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.project-conclusion p{max-width:760px;margin:0;font-size:clamp(22px,2.4vw,36px);line-height:1.18;color:var(--text)}.project-conclusion span{max-width:260px;color:#666;font-size:10px;line-height:1.6;text-align:right;text-transform:uppercase;letter-spacing:1px}
+    @media(max-width:520px){.process-note{width:100%;grid-template-columns:1fr;gap:12px;margin:0}.project-conclusion{display:block}.project-conclusion span{display:block;margin-top:25px;text-align:left}}
+    .wide-render figcaption,.image-stack figcaption{gap:20px;margin-top:14px;color:rgb(255,255,255);font-size:13px;font-weight:600;line-height:1.4}.project-demo{margin-top:80px;margin-bottom:140px}.project-demo video{display:block;width:100%;height:auto;background:#050505;border:1px solid #262626}.project-demo figcaption{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:rgb(255,255,255);font-size:13px;font-weight:600;line-height:1.4;text-transform:uppercase;letter-spacing:1px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+        <img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links">
+        <a href="index.html#inicio">Inicio</a>
+        <a class="active" href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <img src="assets/projects/medieval_house/render_01.jpg" alt="Vista aérea del poblado generado con Adaptative Medieval House Tool">
+      <div class="project-hero-shade"></div>
+      <div class="project-hero-copy section-shell">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow"><span></span> Procedural architecture · 2026</p>
+        <h1>Adaptative<br>Medieval House<br><em>Tool</em></h1>
+      </div>
+      <span class="project-scroll">Explorar breakdown ↓</span>
+    </section>
+
+    <section class="project-overview section-shell">
+      <div class="project-overview-title">
+        <p class="section-index">01 / Overview</p>
+        <h2>Worldbuilding<br><span>procedural.</span></h2>
+      </div>
+      <div class="project-overview-copy">
+        <p class="overview-lead">Una herramienta de arquitectura procedural creada en Houdini e integrada en Unreal Engine 5.</p>
+        <p>Genera múltiples casas medievales manteniendo la coherencia arquitectónica y el control artístico. Sus sistemas adaptativos responden a cada configuración para reducir el trabajo manual sin sacrificar calidad visual.</p>
+        <dl class="project-facts">
+          <div><dt>Rol</dt><dd>Environment Technical Artist</dd></div>
+          <div><dt>Herramientas</dt><dd>Houdini · Unreal Engine 5</dd></div>
+          <div><dt>Enfoque</dt><dd>Procedural Generation · HDA</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="wide-render section-shell">
+      <img src="assets/projects/medieval_house/render_02.jpg" alt="Segundo render del poblado medieval procedural" loading="lazy">
+      <figcaption><span>Final environment</span><span>Unreal Engine 5</span></figcaption>
+    </figure>
+
+    <figure class="project-demo section-shell">
+      <video controls playsinline preload="metadata" poster="assets/projects/medieval_house/BREAKDOWN FRONT.jpg">
+        <source src="assets/projects/medieval_house/adaptative_medieval_house_tool.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este vídeo.
+      </video>
+      <figcaption><span>Adaptative Medieval House Tool in action</span><span>Houdini · Unreal Engine 5</span></figcaption>
+    </figure>
+
+    <section class="breakdown section-shell">
+      <header class="breakdown-header"><p class="section-index">02 / Technical breakdown</p><h2>Sistemas</h2><p>Cada módulo resuelve una parte concreta del edificio y comparte información con el resto para producir resultados coherentes.</p></header>
+
+      <article class="system-block">
+        <div class="system-copy"><span class="system-number">01</span><div><p class="system-label">Roof generation system</p><h3>Tejados adaptativos</h3><p>El sistema detecta los puntos de cumbrera a partir de la huella del edificio, construye planos con pendiente y combina las secciones. Después distribuye tejas con variación y añade envejecimiento procedural.</p></div></div>
+        <div class="image-stack">
+          <figure><img src="assets/projects/medieval_house/1.ROOF GENERATION SYSTEM-ROOF SHAPE GENERATION.jpg" alt="Generación procedural de la forma del tejado" loading="lazy"><figcaption>01. Roof shape generation</figcaption></figure>
+          <aside class="process-note"><span>Adaptive by design</span><p>Cada sistema interpreta la geometría anterior. La casa puede cambiar de forma y el resto de elementos se reconstruye automáticamente.</p></aside>
+          <figure><img src="assets/projects/medieval_house/1.1.ROOF GENERATION SYSTEM-ROOF TILE DISTRIBUTION.jpg" alt="Sistema de distribución de tejas" loading="lazy"><figcaption>02. Roof tile distribution</figcaption></figure>
+          <div class="image-pair">
+            <figure><img src="assets/projects/medieval_house/1.2.ROOF GENERATION SYSTEM-ROOF AGING SYSTEM_01.jpg" alt="Primera fase del sistema de envejecimiento del tejado" loading="lazy"><figcaption>03. Aging system — setup</figcaption></figure>
+            <figure><img src="assets/projects/medieval_house/1.3.ROOF GENERATION SYSTEM-ROOF AGING SYSTEM_02.jpg" alt="Resultado del envejecimiento procedural del tejado" loading="lazy"><figcaption>04. Aging system — result</figcaption></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="system-block">
+        <div class="system-copy"><span class="system-number">02</span><div><p class="system-label">Main entrance system</p><h3>Accesos y escaleras</h3><p>La entrada principal se selecciona según la geometría y el layout. A partir de ella, el sistema calcula y genera una escalera capaz de adaptarse a la altura y configuración del edificio.</p></div></div>
+        <div class="image-stack">
+          <figure><img src="assets/projects/medieval_house/2.MAIN ENTRANCE-MAIN ENTRANCE SELECTION.jpg" alt="Selección procedural de la entrada principal" loading="lazy"><figcaption>01. Main entrance selection</figcaption></figure>
+          <aside class="process-note process-note-right"><span>Less manual work</span><p>La lógica detecta una ubicación válida para el acceso y adapta las escaleras al terreno y a la altura del edificio.</p></aside>
+          <div class="image-pair">
+            <figure><img src="assets/projects/medieval_house/2.1.MAIN ENTRANCE-STAIR GENERATION.jpg" alt="Proceso de generación de escaleras" loading="lazy"><figcaption>02. Stair generation — setup</figcaption></figure>
+            <figure><img src="assets/projects/medieval_house/2.2.MAIN ENTRANCE-STAIR GENERATION_02.jpg" alt="Variantes de escaleras generadas" loading="lazy"><figcaption>03. Stair generation — variants</figcaption></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="system-block">
+        <div class="system-copy"><span class="system-number">03</span><div><p class="system-label">Window generation system</p><h3>Ventanas modulares</h3><p>Un HDA crea variantes desde máscaras alpha personalizadas. Los sockets se distribuyen sobre segmentos válidos de fachada y Unreal instancia automáticamente el modelo seleccionado.</p></div></div>
+        <div class="image-stack image-pair">
+          <figure><img src="assets/projects/medieval_house/3.WINDOW GENERATION SYSTEM-WINDOW VARIANTS TOOL.jpg" alt="Herramienta HDA de variantes de ventanas" loading="lazy"><figcaption>01. Window variants tool</figcaption></figure>
+          <figure><img src="assets/projects/medieval_house/3.1WINDOW GENERATION SYSTEM-UNREAL INTEGRATION.jpg" alt="Integración de ventanas procedurales en Unreal Engine" loading="lazy"><figcaption>02. Unreal Engine integration</figcaption></figure>
+        </div>
+        <figure class="project-demo system-demo">
+          <video controls playsinline preload="metadata" poster="assets/projects/medieval_house/3.WINDOW GENERATION SYSTEM-WINDOW VARIANTS TOOL.jpg">
+            <source src="assets/projects/medieval_house/windows_mod.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este vídeo.
+          </video>
+          <figcaption><span>Window generation system in action</span><span>Houdini · Unreal Engine 5</span></figcaption>
+        </figure>
+        <aside class="process-note process-note-wide"><span>Artist control</span><p>La automatización conserva las decisiones creativas: los parámetros permiten elegir variantes, ajustar la distribución y dirigir el resultado desde Unreal Engine.</p></aside>
+      </article>
+
+      <article class="system-block">
+        <div class="system-copy"><span class="system-number">04</span><div><p class="system-label">Procedural prop distribution</p><h3>Multiparm asset system</h3><p>La distribución de assets expone controles para añadir, ordenar y variar elementos decorativos sin modificar la red interna, acelerando el dressing de cada edificio.</p></div></div>
+        <div class="image-stack"><figure><img src="assets/projects/medieval_house/4.PROCEDURAL PROP DISTRIBUTION-MULTIPARM ASSET SYSTEM.jpg" alt="Sistema multiparm para distribuir props procedurales" loading="lazy"><figcaption>Multiparm asset distribution</figcaption></figure></div>
+      </article>
+
+      <article class="system-block system-block-last">
+        <div class="system-copy"><span class="system-number">05</span><div><p class="system-label">Timber framing system</p><h3>Fachadas conscientes</h3><p>El sistema clasifica la disposición de las ventanas y selecciona automáticamente un patrón de entramado compatible, evitando intersecciones y manteniendo la coherencia de la fachada.</p></div></div>
+        <div class="image-stack"><figure><img src="assets/projects/medieval_house/5.TIMBER FRAMING SYSTEM-FACADE CLASIFICATION.jpg" alt="Clasificación de fachada para el entramado de madera" loading="lazy"><figcaption>Window-aware timber frame generation</figcaption></figure></div>
+        <aside class="project-conclusion"><p>Todos los sistemas trabajan juntos para producir edificios variados y creíbles, listos para construir entornos de mayor escala en tiempo real.</p><span>Procedural content creation · Technical art · Environment workflows</span></aside>
+      </article>
+    </section>
+
+    <section class="project-next section-shell">
+      <p class="section-index">03 / Fin del proyecto</p>
+      <h2>¿Hablamos de<br>technical art?</h2>
+      <div><a href="index.html#contacto">Contactar ↗</a><a href="index.html#proyectos">Volver al portfolio ↑</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.artstation.com/artwork/JwaOXa" target="_blank" rel="noreferrer">ArtStation ↗</a><a href="index.html">Inicio</a></div></footer>
+</body>
+</html>

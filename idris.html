@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Idris, Son of Crow — proyecto de personaje 3D estilizado de Pablo Escribano.">
+  <title>Idris, Son of Crow — Pablo Escribano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}.idris-hero>img{object-position:center}.idris-hero .project-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.18) 72%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 55%)}.idris-gallery{display:grid;gap:80px;margin-bottom:140px}.idris-showcase{margin:0}.idris-showcase img{display:block;width:100%;height:auto;border:1px solid #292929}.idris-showcase figcaption{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:#fff;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px}.character-points{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:140px}.character-points article{padding:42px 32px;border-right:1px solid var(--line)}.character-points article:last-child{border-right:0}.character-points span{color:var(--acid);font:11px var(--display)}.character-points h3{font:20px var(--display);text-transform:uppercase;margin:22px 0 12px}.character-points p{color:var(--muted);font-size:13px;margin:0}.character-note{display:grid;grid-template-columns:1.1fr .9fr;gap:9vw;padding:120px 0 140px;border-top:1px solid var(--line)}.character-note h2{font:clamp(44px,5.6vw,84px)/.95 var(--display);letter-spacing:-4px;text-transform:uppercase;margin:0}.character-note h2 span{color:transparent;-webkit-text-stroke:1px #777}.character-note>div{color:var(--muted);padding-top:10px}.character-note .lead{color:var(--text);font-size:22px;margin-top:0}@media(max-width:900px){.character-points{grid-template-columns:1fr}.character-points article{border-right:0;border-bottom:1px solid var(--line)}.character-points article:last-child{border-bottom:0}.character-note{grid-template-columns:1fr}}@media(max-width:520px){.brand-logo{width:155px;height:42px}.character-note h2{letter-spacing:-2px}.idris-gallery{width:100%;gap:50px;margin-bottom:90px}.idris-showcase figcaption{padding:0 14px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html#inicio" aria-label="Ir al inicio"><img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links"><a href="index.html#inicio">Inicio</a><a class="active" href="index.html#proyectos">Proyectos</a><a href="index.html#sobre-mi">Sobre mí</a><a href="index.html#contacto">Contacto</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero idris-hero">
+      <img src="assets/projects/idris/Vistas.jpg" alt="Vistas frontal, lateral y posterior de Idris">
+      <div class="project-hero-shade"></div>
+      <div class="project-hero-copy section-shell">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow"><span></span> Stylized character · 3D art</p>
+        <h1>Idris,<br>Son of<br><em>Crow</em></h1>
+      </div>
+      <span class="project-scroll">Explorar proyecto ↓</span>
+    </section>
+
+    <section class="project-overview section-shell">
+      <div class="project-overview-title"><p class="section-index">01 / Overview</p><h2>Arquero<br><span>estilizado.</span></h2></div>
+      <div class="project-overview-copy">
+        <p class="overview-lead">Idris es un personaje 3D de fantasía construido alrededor de una silueta reconocible y una identidad visual clara.</p>
+        <p>La capucha, el arco y el carcaj definen inmediatamente su función, mientras que la superposición de tejidos, cuero y piezas metálicas aporta variedad de formas y materiales. La paleta azul y rojiza mantiene el diseño cohesionado desde todos los ángulos.</p>
+        <dl class="project-facts"><div><dt>Proyecto</dt><dd>Personal</dd></div><div><dt>Disciplina</dt><dd>3D Character Art</dd></div><div><dt>Estilo</dt><dd>Stylized Fantasy</dd></div></dl>
+      </div>
+    </section>
+
+    <section class="idris-gallery section-shell" aria-label="Galería del proyecto Idris">
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Render principal.jpg" alt="Render principal del personaje Idris" loading="lazy">
+        <figcaption><span>Render principal</span><span>Idris</span></figcaption>
+      </figure>
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Pose en T.jpg" alt="Modelo de Idris presentado en pose en T" loading="lazy">
+        <figcaption><span>Desarrollo del personaje</span><span>Pose en T</span></figcaption>
+      </figure>
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Texturas.jpg" alt="Desglose de las texturas utilizadas en Idris" loading="lazy">
+        <figcaption><span>Materiales y texturas</span><span>Texture breakdown</span></figcaption>
+      </figure>
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Vistas.jpg" alt="Vistas finales frontal, lateral y posterior de Idris" loading="lazy">
+        <figcaption><span>Vistas finales</span><span>Front · Side · Back</span></figcaption>
+      </figure>
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Vistas Clay.jpg" alt="Vistas clay frontal, lateral y posterior de Idris" loading="lazy">
+        <figcaption><span>Vistas clay</span><span>Form &amp; volume</span></figcaption>
+      </figure>
+      <figure class="idris-showcase">
+        <img src="assets/projects/idris/Vistas wireframe.jpg" alt="Vistas wireframe frontal, lateral y posterior de Idris" loading="lazy">
+        <figcaption><span>Vistas wireframe</span><span>Topology</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="character-points section-shell" aria-label="Claves del diseño">
+      <article><span>01</span><h3>Silhouette</h3><p>Capucha, capa, arco y carcaj construyen una lectura inmediata del personaje incluso a distancia.</p></article>
+      <article><span>02</span><h3>Shape language</h3><p>Formas estilizadas y proporciones controladas equilibran personalidad, claridad y funcionalidad.</p></article>
+      <article><span>03</span><h3>Color & materials</h3><p>Azules profundos, cuero rojizo y pequeños acentos metálicos separan las capas del vestuario.</p></article>
+    </section>
+
+    <section class="character-note section-shell">
+      <h2>Diseñado desde<br><span>todos los ángulos.</span></h2>
+      <div><p class="lead">La presentación multivista permite comprobar que la silueta y la jerarquía visual se mantienen en frontal, perfil y espalda.</p><p>Los accesorios no solo aportan narrativa: también distribuyen el peso visual del conjunto y hacen reconocible al personaje desde cualquier cámara.</p></div>
+    </section>
+
+    <section class="project-next section-shell"><p class="section-index">02 / Fin del proyecto</p><h2>¿Hablamos de<br>3D art?</h2><div><a href="index.html#contacto">Contactar ↗</a><a href="index.html#proyectos">Volver al portfolio ↑</a></div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.artstation.com/artwork/aolAy9" target="_blank" rel="noreferrer">ArtStation ↗</a><a href="index.html">Inicio</a></div></footer>
+</body>
+</html>

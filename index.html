@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Pablo Escribano, Technical Artist especializado en herramientas procedurales y creación 3D.">
+  <title>Pablo Escribano — Technical Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>.brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}.hero-art .hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 32%;filter:contrast(1.05) brightness(.82)}.hero-art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.68),transparent 38%),linear-gradient(90deg,rgba(0,0,0,.12),transparent 45%);pointer-events:none}.hero-art p{z-index:2;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.8)}@media(max-width:520px){.brand-logo{width:155px;height:42px}}</style>
+  <style>.case-cover{height:auto;min-height:0;aspect-ratio:16/9;background-image:url('assets/projects/medieval_house/BREAKDOWN FRONT.jpg');background-size:cover;background-position:center}.case-cover::before{display:none}.cleanup-cover{background-image:url('assets/projects/cleanup_inspector/Portada Cleanup Inspector.png');margin-top:120px}.cleanup-breakdown{grid-template-columns:repeat(3,1fr)}.cleanup-breakdown section{border-bottom:0}.projects-grid{gap:52px 28px}.projects-grid .case-intro{min-height:0;padding-bottom:18px;border-bottom:0}.projects + .about{border-top:0}.project-breakdown-link{display:flex;align-items:center;justify-content:space-between;padding:12px 2px 10px;border-bottom:1px solid var(--line);color:#ddd;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:color .25s,border-color .25s}.project-breakdown-link span{color:var(--acid);font-size:17px}.project-breakdown-link:hover{color:#fff;border-color:var(--acid)}@media(max-width:900px){.projects-grid{gap:64px}}@media(max-width:520px){.projects-grid{gap:52px}}</style>
+  <style>.hero h1 em{-webkit-text-stroke:2px #8d8d88;paint-order:stroke fill}.hero-copy{height:min(580px,64vh);display:flex;flex-direction:column;justify-content:flex-start}.hero-copy .hero-intro{margin-top:auto;margin-bottom:28px}.hero-copy .hero-actions{margin-top:0}@media(max-width:900px){.hero-copy{height:auto}.hero-copy .hero-intro{margin-top:34px;margin-bottom:0}.hero-copy .hero-actions{margin-top:42px}}</style>
+  <style>.project-cover-image{display:block;width:100%;height:100%;object-fit:cover}.projects-grid .case-cover::after{content:'';display:block;position:absolute;inset:-70% auto -70% -55%;width:28%;height:auto;background:linear-gradient(90deg,transparent,rgba(255,255,255,.03),rgba(255,255,255,.16),rgba(255,255,255,.03),transparent);transform:skewX(-18deg) translateX(0);filter:blur(4px);opacity:0;pointer-events:none;z-index:3}.projects-grid .case-cover:hover::after{opacity:.65;animation:card-shine 1.55s cubic-bezier(.25,.6,.35,1) forwards}@keyframes card-shine{0%{left:-55%}100%{left:135%}}@media(prefers-reduced-motion:reduce){.projects-grid .case-cover:hover::after{display:none}}</style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a class="active" href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Technical Art · Houdini · Unreal Engine</p>
+        <h1 id="hero-title">3D&amp;Tech<br><em>Artist</em></h1>
+        <p class="hero-intro">Soy Pablo Escribano, Technical Artist especializado en generación procedural y desarrollo de herramientas para entornos 3D en tiempo real, con experiencia en optimización, Unity y desarrollo de experiencias XR/VR.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">Explorar proyectos <span>↘</span></a>
+          <a class="text-link" href="#contacto">Trabajemos juntos ↗</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img class="hero-portrait" src="assets/profile/foto web.jpg" alt="">
+      </div>
+      <p class="scroll-label">Scroll to explore <span>↓</span></p>
+    </section>
+
+    <section id="proyectos" class="projects section-shell" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="section-index">01 / Selección</p><h2 id="projects-title">Proyectos</h2></div>
+        <p>Herramientas procedurales que conectan dirección artística, automatización y producción en tiempo real.</p>
+      </div>
+
+      <div class="projects-grid">
+      <article class="case-study">
+        <a class="case-cover" href="medieval-house.html">
+          <img class="project-cover-image" src="assets/projects/medieval_house/BREAKDOWN FRONT.jpg" alt="Adaptative Medieval House Tool">
+          <span class="sr-only">Abrir el proyecto Adaptative Medieval House Tool</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">Houdini · Unreal Engine 5 · Procedural Generation</p><h3>Adaptative Medieval House Tool</h3></div><p>Herramienta procedural para generar edificios medievales adaptativos mediante sistemas interconectados, acelerando el worldbuilding sin perder control artístico.</p></div>
+        <a class="project-breakdown-link" href="medieval-house.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover cleanup-cover" href="cleanup-inspector.html">
+          <img class="project-cover-image" src="assets/projects/cleanup_inspector/Portada Cleanup Inspector.png" alt="Blender Cleanup Inspector Add-on">
+          <span class="sr-only">Abrir el proyecto Blender Cleanup Inspector Add-on</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">Python · Blender API · Tool Development</p><h3>Cleanup Inspector para Blender</h3></div><p>Add-on ligero para detectar, revisar y eliminar materiales e imágenes sin uso desde el viewport durante la iteración de assets.</p></div>
+        <a class="project-breakdown-link" href="cleanup-inspector.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover" href="idris.html">
+          <img class="project-cover-image" src="assets/projects/idris/Vistas.jpg" alt="Idris, Son of Crow">
+          <span class="sr-only">Abrir el proyecto Idris, Son of Crow</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">3D Character · Stylized Art · Character Design</p><h3>Idris, Son of Crow</h3></div><p>Personaje 3D estilizado diseñado como un arquero de fantasía, con una silueta clara, vestuario por capas y accesorios orientados a reforzar su identidad.</p></div>
+        <a class="project-breakdown-link" href="idris.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover" href="elf.html">
+          <img class="project-cover-image" src="assets/projects/elf/Vistas.jpg" alt="Elven Spirit">
+          <span class="sr-only">Abrir el proyecto Elven Spirit</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">3D Character · Stylized Art · Character Design</p><h3>Elven Spirit</h3></div><p>Guerrero elfo 3D de estilo cartoon, diseñado mediante formas exageradas, una pose de combate dinámica y un efecto mágico que refuerza la acción.</p></div>
+        <a class="project-breakdown-link" href="elf.html">Ver breakdown <span>↗</span></a>
+      </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about section-shell" aria-labelledby="about-title">
+      <p class="section-index">02 / Perfil</p>
+      <div class="about-grid"><h2 id="about-title">Visión artística.<br><span>Solución técnica.</span></h2><div><p class="about-lead">Creo sistemas que permiten a los artistas construir más, iterar más rápido y conservar el control creativo.</p><p>Mi trabajo conecta arte y tecnología mediante herramientas procedurales, modelado 3D, materiales y flujos para entornos en tiempo real.</p><ul class="skills"><li>Procedural Generation</li><li>Houdini</li><li>Unreal Engine</li><li>Tool Development</li><li>3D Modeling</li><li>Worldbuilding</li></ul></div></div>
+    </section>
+
+    <section id="contacto" class="contact section-shell" aria-labelledby="contact-title">
+      <p class="section-index">03 / Contacto</p>
+      <h2 id="contact-title">¿Tienes un proyecto<br>entre manos?</h2>
+      <a class="contact-mail" href="mailto:artpablo88@gmail.com">artpablo88@gmail.com <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="#">Vimeo</a><a href="#">LinkedIn</a><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
