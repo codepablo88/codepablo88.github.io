@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Space Revenge — trabajo de desarrollo de videojuegos de Pablo Escribano.">
+  <title>Space Revenge — Pablo Escribano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}
+    .work-hero>img{object-position:center}
+    .work-hero .project-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.08) 68%),linear-gradient(0deg,rgba(0,0,0,.8),transparent 58%)}
+    .work-details{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;padding:125px 0 135px}
+    .work-details-visual{display:flex;min-width:0;flex-direction:column}
+    .work-details-visual img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border:1px solid #292929;border-radius:16px;background:#111}
+    .work-details-copy{padding-top:10px;color:var(--muted)}
+    .work-details-copy{display:flex;flex-direction:column;justify-content:center}
+    .work-platforms-detail{display:flex;align-items:center;gap:22px;min-height:52px}.work-platforms-detail img{display:block;width:46px;height:46px;object-fit:contain}
+    .work-details-copy .lead{margin-top:0;color:var(--text);font-size:22px}
+    .work-facts{margin:38px 0 0}
+    .work-facts div{display:flex;justify-content:space-between;gap:25px;padding:13px 0;border-top:1px solid var(--line);font-size:12px}
+    .work-facts dt{color:#666;text-transform:uppercase;letter-spacing:1px}.work-facts dd{margin:0;text-align:right;color:#ddd}.work-facts a{color:var(--acid);border-bottom:1px solid rgba(255,101,44,.45)}
+    .responsibility-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:42px 0 0;padding:0;border-top:1px solid var(--line);border-left:1px solid var(--line);list-style:none}
+    .responsibility-list li{position:relative;min-height:82px;padding:27px 25px 22px 49px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);color:#ddd;font-size:14px}
+    .responsibility-list li::before{content:'↗';position:absolute;left:22px;top:26px;color:var(--acid);font-weight:700}
+    .work-gallery{padding-bottom:140px}.work-gallery-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;padding-top:110px;margin-bottom:45px;border-top:1px solid var(--line)}
+    .work-gallery-heading h2{margin:0;font:clamp(44px,5.6vw,84px)/.95 var(--display);letter-spacing:-3px;text-transform:uppercase}.work-gallery-heading>p{max-width:420px;margin:0;color:var(--muted)}
+    .work-gallery-slide{width:58%;margin:0}.work-gallery-slide img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;border:1px solid #292929;border-radius:16px;background:#111}.work-gallery-slide figcaption{margin-top:12px;color:#fff;font-size:12px;font-weight:600}
+    @media(max-width:900px){.work-details{grid-template-columns:1fr;gap:35px;padding:90px 0 100px}.work-gallery-heading{display:block;padding-top:85px}.work-gallery-heading>p{margin-top:24px}.work-gallery-slide{width:88%}}
+    @media(max-width:520px){.brand-logo{width:155px;height:42px}.responsibility-list{grid-template-columns:1fr}.work-facts div{align-items:flex-start;flex-direction:column;gap:5px}.work-gallery-slide{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html#inicio" aria-label="Ir al inicio"><img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links"><a href="index.html#inicio">Inicio</a><a href="index.html#proyectos">Proyectos</a><a href="index.html#prototyping">Prototyping</a><a class="active" href="index.html#trabajos">Trabajos</a><a href="index.html#contacto">Contacto</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="project-hero work-hero">
+      <img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Portada del trabajo 02">
+      <div class="project-hero-shade"></div>
+      <div class="project-hero-copy section-shell"><a class="back-link" href="index.html#trabajos">← Volver a trabajos</a><p class="eyebrow"><span></span> Steam · Juego publicado · 2021</p><h1>Space<br><em>Revenge</em></h1></div>
+      <span class="project-scroll">Explorar trabajo ↓</span>
+    </section>
+    <section class="work-details section-shell">
+      <div class="work-details-visual"><p class="section-index">01 / Participación</p><img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Logo de Space Revenge" loading="lazy"></div>
+      <div class="work-details-copy">
+        <div class="work-platforms-detail" aria-label="Disponible en Steam, PlayStation 4, Xbox y Nintendo Switch"><img src="assets/works/icons/steam.png" alt="Steam"><img src="assets/works/icons/ps4.png" alt="PlayStation 4"><img src="assets/works/icons/xbox.png" alt="Xbox"><img src="assets/works/icons/switch.png" alt="Nintendo Switch"></div>
+        <dl class="work-facts">
+          <div><dt>Steam</dt><dd>16 de junio de 2021</dd></div>
+          <div><dt>Plataformas</dt><dd>Xbox Series X|S · PlayStation 4 · Xbox One · Windows · GNU/Linux · Nintendo Switch · PlayStation 5</dd></div>
+          <div><dt>Estudio</dt><dd><a href="http://www.eskemagames.es/" target="_blank" rel="noreferrer">Eskema Games ↗</a></dd></div>
+        </dl>
+        <ul class="responsibility-list" aria-label="Tareas realizadas en Space Revenge">
+          <li>Modelado 3D</li>
+          <li>Creación de UI</li>
+          <li>Diseño de escenarios</li>
+          <li>Partículas</li>
+          <li>Imágenes promocionales y concepts de referencia</li>
+          <li>Logos y apoyo gráfico para marketing</li>
+        </ul>
+      </div>
+    </section>
+    <section class="work-gallery section-shell" aria-labelledby="gallery-title">
+      <div class="work-gallery-heading"><div><p class="section-index">02 / Material visual</p><h2 id="gallery-title">Galería</h2></div><p>Aquí incorporaremos las imágenes y sus descripciones.</p></div>
+      <figure class="work-gallery-slide"><img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Logo del trabajo 02" loading="lazy"><figcaption>Material provisional</figcaption></figure>
+    </section>
+    <section class="project-next section-shell"><p class="section-index">03 / Fin del trabajo</p><h2>¿Hablamos de<br>este proyecto?</h2><div><a href="index.html#contacto">Contactar ↗</a><a href="index.html#trabajos">Volver a trabajos ↑</a></div></section>
+  </main>
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="index.html#trabajos">Trabajos</a><a href="index.html">Inicio</a></div></footer>
+</body>
+</html>

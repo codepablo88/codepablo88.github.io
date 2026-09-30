@@ -1,0 +1,16 @@
+# Archivos locales del sistema y del editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.codex/
+
+# Configuración y credenciales locales
+.env
+.env.*
+!.env.example
+
+# Dependencias y registros locales
+node_modules/
+*.log
