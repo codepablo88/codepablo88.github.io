@@ -23,6 +23,8 @@
     @media(max-width:900px){.prototype-title-copy{width:min(100% - 40px,700px)}.prototype-title-copy h1{letter-spacing:-4px}.prototype-title-summary,.logbook-intro{grid-template-columns:1fr}.prototype-title-summary{display:grid}.logbook-intro{gap:35px;padding-top:90px}.logbook-entry{width:calc(100% - 72px)}.logbook-entry-body{grid-template-columns:1fr}.logbook-media{border-right:0;border-bottom:1px solid var(--line)}.logbook-media img,.logbook-media video{min-height:0;aspect-ratio:16/9}.logbook-media-placeholder{min-height:260px}.logbook-entry-note{margin-left:72px}}
     @media(max-width:520px){.brand-logo{width:155px;height:42px}.prototype-title-hero{min-height:540px;padding:110px 0 65px}.prototype-title-copy{width:calc(100% - 28px)}.prototype-title-copy .back-link{margin-bottom:55px}.prototype-title-copy h1{font-size:48px;letter-spacing:-2.5px}.prototype-title-copy h1 em{-webkit-text-stroke-width:1px}.prototype-title-summary{gap:20px}.logbook-intro h2{letter-spacing:-2px}.prototype-logbook::before{left:8px}.logbook-entry{width:calc(100% - 28px);margin-left:28px;border-radius:12px}.logbook-entry::before{left:-27px}.logbook-entry-header{padding:17px}.logbook-entry-body{display:block}.logbook-copy{padding:30px 22px}.logbook-entry-note{margin-left:28px}}
   </style>
+  <script src="translations.js" defer></script>
+  <script src="language.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -30,7 +32,10 @@
       <a class="brand" href="index.html#inicio" aria-label="Ir al inicio"><img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano"></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
       <div class="nav-links"><a href="index.html#inicio">Inicio</a><a href="index.html#proyectos">Proyectos</a><a class="active" href="index.html#prototyping">Prototyping</a><a href="index.html#contacto">Contacto</a></div>
-    </nav>
+    <div class="language-switcher" role="group" aria-label="Seleccionar idioma">
+        <button type="button" data-language="es" aria-label="Castellano" title="Castellano" aria-pressed="true" lang="es"><img src="assets/flags/spain.svg" width="30" height="20" alt=""><span class="sr-only">Castellano</span></button>
+        <button type="button" data-language="en" aria-label="English" title="English" aria-pressed="false" lang="en"><img src="assets/flags/england.svg" width="30" height="20" alt=""><span class="sr-only">English</span></button>
+      </div></nav>
   </header>
 
   <main>

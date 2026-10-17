@@ -42,9 +42,23 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 
 - `index.html`: inicio, cards de proyectos, prototipos, trabajos y contacto.
 - `styles.css` y `project.css`: estilos compartidos.
+- `language.js` y `translations.js`: selector de idioma y traducciones al inglés.
 - `cozy-game.html` y `procedural-support-tool.html`: diarios de prototipos.
 - Resto de HTML: páginas de detalle de proyectos y trabajos.
 - `assets/`: imágenes, vídeos, logotipos y CV descargable.
 
 Mantén los nombres de archivo y las rutas exactamente iguales al enlazarlos,
 incluidas las mayúsculas, los espacios y los guiones de los vídeos.
+
+## Idiomas
+
+Las banderas de España y del Reino Unido en la cabecera cambian entre castellano e
+inglés sin recargar la página. La selección se conserva al navegar y al volver
+a abrir la web. También puedes enlazar una página con `?lang=en` o `?lang=es`.
+Los SVG provisionales están en `assets/flags/`.
+
+Al añadir textos en castellano, incorpora su traducción como una nueva entrada
+en `translations.js`. Las claves deben coincidir con el texto original, incluidos
+los signos y acentos. El selector traduce también los textos alternativos,
+las etiquetas de accesibilidad y la descripción de la página. El PDF del CV
+y los textos incrustados en imágenes y vídeos conservan su contenido original.

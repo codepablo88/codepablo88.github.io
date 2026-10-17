@@ -21,6 +21,8 @@
     @media(max-width:900px){.work-responsibilities-visual img{aspect-ratio:1/1}.work-gallery-slide{flex-basis:88%}}
     @media(max-width:520px){.work-gallery-slide{flex-basis:94%}}
   </style>
+  <script src="translations.js" defer></script>
+  <script src="language.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -28,7 +30,10 @@
       <a class="brand" href="index.html#inicio" aria-label="Ir al inicio"><img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano"></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
       <div class="nav-links"><a href="index.html#inicio">Inicio</a><a href="index.html#proyectos">Proyectos</a><a href="index.html#prototyping">Prototyping</a><a class="active" href="index.html#trabajos">Trabajos</a><a href="index.html#contacto">Contacto</a></div>
-    </nav>
+    <div class="language-switcher" role="group" aria-label="Seleccionar idioma">
+        <button type="button" data-language="es" aria-label="Castellano" title="Castellano" aria-pressed="true" lang="es"><img src="assets/flags/spain.svg" width="30" height="20" alt=""><span class="sr-only">Castellano</span></button>
+        <button type="button" data-language="en" aria-label="English" title="English" aria-pressed="false" lang="en"><img src="assets/flags/england.svg" width="30" height="20" alt=""><span class="sr-only">English</span></button>
+      </div></nav>
   </header>
 
   <main>
