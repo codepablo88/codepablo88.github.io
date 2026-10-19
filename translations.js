@@ -365,5 +365,6 @@ window.portfolioEnglish = {
   "Videojuegos publicados y una selección de mi experiencia profesional.": "Released games and selected highlights from my professional experience.",
   "Ideas en desarrollo, sistemas interactivos y diarios de experimentación.": "Ideas in development, interactive systems and experimentation journals.",
   "Proyectos | Pablo Escribano Bastante": "Projects | Pablo Escribano Bastante",
-  "Trabajos | Pablo Escribano Bastante": "Work | Pablo Escribano Bastante"
+  "Trabajos | Pablo Escribano Bastante": "Work | Pablo Escribano Bastante",
+  "Explorar secciones": "Explore sections"
 };
