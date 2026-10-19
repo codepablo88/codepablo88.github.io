@@ -361,13 +361,13 @@ window.portfolioEnglish = {
   "Material provisional": "Provisional material",
   "este proyecto?": "this project?",
   "← Volver al inicio": "← Back to home",
-  "Herramientas procedurales y arte 3D: del concepto al resultado final.": "Procedural tools and 3D art: from concept to final result.",
-  "Videojuegos publicados y una selección de mi experiencia profesional.": "Released games and selected highlights from my professional experience.",
-  "Ideas en desarrollo, sistemas interactivos y diarios de experimentación.": "Ideas in development, interactive systems and experimentation journals.",
   "Proyectos | Pablo Escribano Bastante": "Projects | Pablo Escribano Bastante",
   "Trabajos | Pablo Escribano Bastante": "Work | Pablo Escribano Bastante",
   "Explorar secciones": "Explore sections",
   "Poblado medieval junto al lago": "Medieval village beside the lake",
   "Prueba de una experiencia de realidad virtual": "Testing a virtual reality experience",
-  "Desarrollo del prototipo en Unity": "Prototype development in Unity"
+  "Desarrollo del prototipo en Unity": "Prototype development in Unity",
+  "Generación procedural, arte 3D, y herramientas de optimización": "Procedural generation, 3D art, and optimisation tools",
+  "Experiencias laborales, aplicaciones inmersivas y videojuegos publicados": "Professional experience, immersive applications and released video games",
+  "Prototipado y diarios de experimentación": "Prototyping and experimentation journals"
 };
