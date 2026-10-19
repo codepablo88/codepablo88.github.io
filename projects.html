@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Pablo Escribano, Technical Artist especializado en herramientas procedurales y creación 3D.">
+  <title>Proyectos | Pablo Escribano Bastante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="listing.css">
+  <script src="translations.js" defer></script>
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+        <img class="brand-logo" src="assets/logo/logo web 2.png" alt="Pablo Escribano">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">Menú</button>
+      <div class="nav-links">
+        <a href="index.html#inicio">Inicio</a>
+        <a class="active" href="projects.html">Proyectos</a>
+        <a href="prototyping.html">Prototyping</a>
+        <a href="works.html">Trabajos</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+    <div class="language-switcher" role="group" aria-label="Seleccionar idioma">
+        <button type="button" data-language="es" aria-label="Castellano" title="Castellano" aria-pressed="true" lang="es"><img src="assets/flags/spain.svg" width="30" height="20" alt=""><span class="sr-only">Castellano</span></button>
+        <button type="button" data-language="en" aria-label="English" title="English" aria-pressed="false" lang="en"><img src="assets/flags/england.svg" width="30" height="20" alt=""><span class="sr-only">English</span></button>
+      </div></nav>
+  </header>
+
+  <main id="inicio">
+    <div class="listing-back section-shell"><a href="index.html">← Volver al inicio</a></div>
+    <section id="proyectos" class="projects section-shell" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="section-index">01 / Selección</p><h2 id="projects-title">Proyectos</h2></div>
+        <p>Herramientas procedurales y proyectos 3D que combinan dirección artística, automatización y producción en tiempo real.</p>
+      </div>
+
+      <div class="projects-grid">
+      <article class="case-study">
+        <a class="case-cover" href="medieval-house.html">
+          <img class="project-cover-image" src="assets/projects/medieval_house/BREAKDOWN FRONT.jpg" alt="Adaptative Medieval House Tool">
+          <span class="sr-only">Abrir el proyecto Adaptative Medieval House Tool</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">Houdini · Unreal Engine 5 · Procedural Generation</p><h3>Adaptative Medieval House Tool</h3></div><p>Herramienta procedural para generar edificios medievales adaptativos mediante sistemas interconectados, acelerando el worldbuilding sin perder control artístico.</p></div>
+        <a class="project-breakdown-link" href="medieval-house.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover cleanup-cover" href="cleanup-inspector.html">
+          <img class="project-cover-image" src="assets/projects/cleanup_inspector/Portada Cleanup Inspector.png" alt="Blender Cleanup Inspector Add-on">
+          <span class="sr-only">Abrir el proyecto Blender Cleanup Inspector Add-on</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">Python · Blender API · Tool Development</p><h3>Cleanup Inspector para Blender</h3></div><p>Add-on ligero para detectar, revisar y eliminar materiales e imágenes sin uso desde el viewport durante la iteración de assets.</p></div>
+        <a class="project-breakdown-link" href="cleanup-inspector.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover" href="idris.html">
+          <img class="project-cover-image" src="assets/projects/idris/Vistas.jpg" alt="Idris, Son of Crow">
+          <span class="sr-only">Abrir el proyecto Idris, Son of Crow</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">3D Character · Stylized Art · Character Design</p><h3>Idris, Son of Crow</h3></div><p>Personaje 3D estilizado diseñado como un arquero de fantasía, con una silueta clara, vestuario por capas y accesorios orientados a reforzar su identidad.</p></div>
+        <a class="project-breakdown-link" href="idris.html">Ver breakdown <span>↗</span></a>
+      </article>
+
+      <article class="case-study">
+        <a class="case-cover" href="elf.html">
+          <img class="project-cover-image" src="assets/projects/elf/Vistas.jpg" alt="Elven Spirit">
+          <span class="sr-only">Abrir el proyecto Elven Spirit</span>
+        </a>
+        <div class="case-intro"><div><p class="project-type">3D Character · Stylized Art · Character Design</p><h3>Elven Spirit</h3></div><p>Guerrero elfo 3D de estilo cartoon, diseñado mediante formas exageradas, una pose de combate dinámica y un efecto mágico que refuerza la acción.</p></div>
+        <a class="project-breakdown-link" href="elf.html">Ver breakdown <span>↗</span></a>
+      </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="#">Vimeo</a><a href="#">LinkedIn</a><a href="index.html#inicio">Volver arriba ↑</a></div></footer>
+  <script src="listing.js"></script>
+</body>
+</html>

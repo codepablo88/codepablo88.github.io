@@ -359,5 +359,11 @@ window.portfolioEnglish = {
   "Aquí incorporaremos las imágenes y sus descripciones.": "Images and their descriptions will be added here.",
   "Logo del trabajo 02": "Work 02 logo",
   "Material provisional": "Provisional material",
-  "este proyecto?": "this project?"
+  "este proyecto?": "this project?",
+  "← Volver al inicio": "← Back to home",
+  "Herramientas procedurales y arte 3D: del concepto al resultado final.": "Procedural tools and 3D art: from concept to final result.",
+  "Videojuegos publicados y una selección de mi experiencia profesional.": "Released games and selected highlights from my professional experience.",
+  "Ideas en desarrollo, sistemas interactivos y diarios de experimentación.": "Ideas in development, interactive systems and experimentation journals.",
+  "Proyectos | Pablo Escribano Bastante": "Projects | Pablo Escribano Bastante",
+  "Trabajos | Pablo Escribano Bastante": "Work | Pablo Escribano Bastante"
 };

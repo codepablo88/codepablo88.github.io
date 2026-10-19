@@ -40,7 +40,10 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 
 ## Organización
 
-- `index.html`: inicio, cards de proyectos, prototipos, trabajos y contacto.
+- `index.html`: inicio con tres tarjetas de acceso y contacto.
+- `projects.html`, `works.html` y `prototyping.html`: secciones con sus fichas y enlaces a los detalles.
+- `home.css` y `home.js`: tarjetas de inicio y compatibilidad con los antiguos enlaces a secciones.
+- `listing.css` y `listing.js`: estilos y carruseles de las páginas de sección.
 - `styles.css` y `project.css`: estilos compartidos.
 - `language.js` y `translations.js`: selector de idioma y traducciones al inglés.
 - `cozy-game.html` y `procedural-support-tool.html`: diarios de prototipos.
