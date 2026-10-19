@@ -366,5 +366,8 @@ window.portfolioEnglish = {
   "Ideas en desarrollo, sistemas interactivos y diarios de experimentación.": "Ideas in development, interactive systems and experimentation journals.",
   "Proyectos | Pablo Escribano Bastante": "Projects | Pablo Escribano Bastante",
   "Trabajos | Pablo Escribano Bastante": "Work | Pablo Escribano Bastante",
-  "Explorar secciones": "Explore sections"
+  "Explorar secciones": "Explore sections",
+  "Poblado medieval junto al lago": "Medieval village beside the lake",
+  "Prueba de una experiencia de realidad virtual": "Testing a virtual reality experience",
+  "Desarrollo del prototipo en Unity": "Prototype development in Unity"
 };
