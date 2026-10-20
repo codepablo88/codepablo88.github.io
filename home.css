@@ -15,7 +15,7 @@
 .directory-card:hover img,.directory-card:focus-visible img{transform:scale(1.065)}
 .directory-card:hover .directory-image::after,.directory-card:focus-visible .directory-image::after{opacity:.65;animation:directory-shine 1.55s cubic-bezier(.25,.6,.35,1) forwards}
 @keyframes directory-shine{from{left:-55%}to{left:135%}}
-.section-directory+.contact{padding-top:60px}
+.section-directory+.contact{border-top:0;padding-top:60px}
 @media(min-width:761px) and (max-width:1100px){.section-directory{width:calc(100% - 40px)}.directory-grid{gap:16px}.directory-copy{padding:20px 16px}.directory-title h2{font-size:clamp(19px,2.5vw,27px)}}
 @media(max-width:760px){.directory-grid{grid-template-columns:1fr;gap:24px}.directory-image{aspect-ratio:16/9}.directory-title h2{font-size:28px}.section-directory{padding-top:28px;padding-bottom:36px}.section-directory+.contact{padding-top:44px}}
 @media(prefers-reduced-motion:reduce){.directory-card,.directory-image img{transition:none}.directory-card:hover,.directory-card:focus-visible,.directory-card:hover img,.directory-card:focus-visible img{transform:none}.directory-image::after{display:none}}
