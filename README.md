@@ -48,6 +48,7 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 - `language.js` y `translations.js`: selector de idioma y traducciones al inglés.
 - `cozy-game.html` y `procedural-support-tool.html`: diarios de prototipos.
 - `trabajo-03.html` a `trabajo-06.html`: fichas iniciales de los trabajos pendientes, con la estructura de Delta Squad; comparten `work-detail.css` y `work-detail.js`.
+- Los seis trabajos comparten `delta-overview.css` para la presentación, el bloque de desarrollo alterno y el tráiler. Los textos provisionales y los espacios de imagen o vídeo se pueden sustituir en cada HTML sin modificar las otras fichas.
 - Resto de HTML: páginas de detalle de proyectos y trabajos.
 - `assets/`: imágenes, vídeos, logotipos y CV descargable.
 

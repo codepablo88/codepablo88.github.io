@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="work-detail.css">
+  <link rel="stylesheet" href="delta-overview.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -34,36 +35,54 @@
   </header>
 
   <main>
-    <section class="project-hero delta-hero">
-      <img src="assets/works/trabajo_03/imagen para portada de card.png" alt="Puzzle platformer">
-      <div class="project-hero-shade"></div>
-      <div class="project-hero-copy section-shell">
-        <a class="back-link" href="works.html#trabajos">← Volver a trabajos</a>
-        <p class="eyebrow"><span></span> 3D · Game Development</p>
-        <h1>Puzzle<br><em>platformer</em></h1>
-      </div>
-      <span class="project-scroll">Explorar trabajo ↓</span>
-    </section>
-
-    <section class="work-responsibilities section-shell">
-      <div class="work-responsibilities-visual"><video class="work-contribution-video" controls playsinline preload="metadata" poster="assets/works/trabajo_03/trailer-poster.jpg" width="1920" height="1080"><source src="assets/works/trabajo_03/Trailer_mod.mp4" type="video/mp4">Tu navegador no puede reproducir este vídeo.</video></div>
-      <div class="work-responsibilities-copy">
-        <p class="lead">Participación y tareas por definir.</p>
-        <dl class="work-facts" aria-label="Ficha del trabajo">
+    <div class="work-overview-back section-shell"><a class="back-link" href="works.html#trabajos">← Volver a trabajos</a></div>
+    <section class="work-overview section-shell" aria-labelledby="work-title">
+      <h1 id="work-title" class="sr-only">The Long Jump</h1>
+      <div class="work-overview-grid">
+        <div class="work-overview-art"><img src="assets/works/trabajo_03/imagen para portada de card.png" alt="The Long Jump" fetchpriority="high"></div>
+        <div class="work-overview-info">
+          <div class="work-overview-panel"><dl class="work-facts" aria-label="Ficha del trabajo">
           <div><dt>Rol</dt><dd>2D Artist</dd></div>
           <div><dt>Plataformas</dt><dd><a href="https://alblo-studio.itch.io/the-long-jump" target="_blank" rel="noopener noreferrer">PC</a></dd></div>
           <div><dt>Fecha</dt><dd><time datetime="2023-05-10">10 de mayo de 2023</time></dd></div>
           <div><dt>Estudio</dt><dd>Alblo Studio</dd></div>
-        </dl>
-        <ul class="responsibility-list" aria-label="Funciones principales">
+        </dl><ul class="responsibility-list" aria-label="Funciones principales">
           <li>Artista 2D</li>
           <li>Diseño de entornos - Set Dressing</li>
           <li>Animaciones</li>
           <li>Partículas</li>
           <li>Iluminación</li>
           <li>Arte promocional y marketing</li>
-        </ul>
+        </ul></div>
+          <div class="work-overview-description">
+            <span class="work-overview-draft">Texto provisional</span>
+            <p>Una propuesta de plataformas y puzles con una identidad visual en pixel art, escenarios de cuevas y retos de exploración.</p>
+            <p>El apartado de desarrollo recogerá el trabajo de arte 2D, la composición de escenarios, las animaciones y los efectos que dan forma a la experiencia.</p>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="work-development section-shell" aria-labelledby="development-title">
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-rows">
+        <article class="work-development-row" aria-labelledby="development-stage-1">
+          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+        <article class="work-development-row" aria-labelledby="development-stage-3">
+          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="work-trailer section-shell" aria-label="Tráiler de The Long Jump">
+      <video controls playsinline preload="metadata" poster="assets/works/trabajo_03/trailer-poster.jpg" width="1920" height="1080"><source src="assets/works/trabajo_03/Trailer_mod.mp4" type="video/mp4">Tu navegador no puede reproducir este vídeo.</video>
     </section>
 
     <section class="work-gallery work-gallery--uncropped section-shell" aria-labelledby="gallery-title">
@@ -81,7 +100,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="works.html#trabajos">Trabajos</a><a href="index.html">Inicio</a></div></footer>

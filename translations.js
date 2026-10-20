@@ -415,5 +415,19 @@ window.portfolioEnglish = {
   "Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.": "Describe this development stage, the decisions made and your contribution to the project here.",
   "Fase 01": "Stage 01",
   "Fase 02": "Stage 02",
-  "Fase 03": "Stage 03"
+  "Fase 03": "Stage 03",
+  "Texto provisional": "Provisional text",
+  "Tráiler pendiente": "Trailer pending",
+  "Espacio reservado para el tráiler del proyecto.": "Space reserved for the project trailer.",
+  "Una aventura de acción ambientada en un universo de ciencia ficción, donde los escenarios y la atmósfera acompañan cada enfrentamiento.": "An action adventure set in a science-fiction universe, where environments and atmosphere support every encounter.",
+  "Esta presentación reunirá el trabajo visual, los recursos creados y las decisiones tomadas durante el desarrollo del proyecto.": "This presentation will bring together the visual work, created assets and decisions made during the project’s development.",
+  "Una propuesta de plataformas y puzles con una identidad visual en pixel art, escenarios de cuevas y retos de exploración.": "A puzzle platformer with a pixel-art visual identity, cave environments and exploration challenges.",
+  "El apartado de desarrollo recogerá el trabajo de arte 2D, la composición de escenarios, las animaciones y los efectos que dan forma a la experiencia.": "The development section will cover the 2D artwork, environment composition, animations and effects that shape the experience.",
+  "Tráiler de The Long Jump": "The Long Jump trailer",
+  "Un proyecto de plataformas y puzles en el que el entorno, el ritmo y la lectura visual de los desafíos construyen la experiencia de juego.": "A puzzle platformer in which the environment, pacing and visual clarity of challenges shape the gameplay experience.",
+  "Aquí se presentarán las distintas fases de producción, desde las primeras pruebas hasta la integración de los elementos visuales.": "The production stages will be presented here, from initial experiments to the integration of visual elements.",
+  "Una experiencia inmersiva centrada en la representación de un entorno industrial y sus posibilidades de interacción en realidad virtual.": "An immersive experience focused on representing an industrial environment and its possibilities for interaction in virtual reality.",
+  "Este espacio recogerá el proceso de creación de escenarios, preparación de assets e integración visual de la aplicación.": "This space will cover environment creation, asset preparation and the application’s visual integration.",
+  "Una simulación de un entorno comercial pensada para explorar situaciones y tareas mediante una experiencia de realidad virtual.": "A retail environment simulation designed to explore situations and tasks through a virtual reality experience.",
+  "El desarrollo mostrará cómo se organizan los espacios, se preparan los elementos del escenario y se construye una experiencia visual coherente.": "The development section will show how spaces are organised, scene elements are prepared and a coherent visual experience is built."
 };

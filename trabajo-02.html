@@ -33,6 +33,7 @@
     @media(max-width:900px){.work-details{grid-template-columns:1fr;gap:35px;padding:90px 0 100px}.work-gallery-heading{display:block;padding-top:85px}.work-gallery-heading>p{margin-top:24px}.work-gallery-slide{width:88%}}
     @media(max-width:520px){.brand-logo{width:155px;height:42px}.responsibility-list{grid-template-columns:1fr}.work-facts div{align-items:flex-start;flex-direction:column;gap:5px}.work-gallery-slide{width:100%}}
   </style>
+  <link rel="stylesheet" href="delta-overview.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -55,31 +56,55 @@
       </div></nav>
   </header>
   <main>
-    <section class="project-hero work-hero">
-      <img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Portada del trabajo 02">
-      <div class="project-hero-shade"></div>
-      <div class="project-hero-copy section-shell"><a class="back-link" href="works.html#trabajos">← Volver a trabajos</a><p class="eyebrow"><span></span> Steam · Juego publicado · 2021</p><h1>Space<br><em>Revenge</em></h1></div>
-      <span class="project-scroll">Explorar trabajo ↓</span>
-    </section>
-    <section class="work-details section-shell">
-      <div class="work-details-visual"><img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Logo de Space Revenge" loading="lazy"></div>
-      <div class="work-details-copy">
-        <div class="work-platforms-detail" aria-label="Disponible en Steam, PlayStation 4, Xbox y Nintendo Switch"><img src="assets/works/icons/steam.png" alt="Steam"><img src="assets/works/icons/ps4.png" alt="PlayStation 4"><img src="assets/works/icons/xbox.png" alt="Xbox"><img src="assets/works/icons/switch.png" alt="Nintendo Switch"></div>
-        <dl class="work-facts">
+    <div class="work-overview-back section-shell"><a class="back-link" href="works.html#trabajos">← Volver a trabajos</a></div>
+    <section class="work-overview section-shell" aria-labelledby="work-title">
+      <h1 id="work-title" class="sr-only">Space Revenge</h1>
+      <div class="work-overview-grid">
+        <div class="work-overview-art"><img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Space Revenge" fetchpriority="high"></div>
+        <div class="work-overview-info">
+          <div class="work-overview-panel"><div class="work-platforms-detail" aria-label="Disponible en Steam, PlayStation 4, Xbox y Nintendo Switch"><img src="assets/works/icons/steam.png" alt="Steam"><img src="assets/works/icons/ps4.png" alt="PlayStation 4"><img src="assets/works/icons/xbox.png" alt="Xbox"><img src="assets/works/icons/switch.png" alt="Nintendo Switch"></div><dl class="work-facts">
           <div><dt>Steam</dt><dd>16 de junio de 2021</dd></div>
           <div><dt>Plataformas</dt><dd>Xbox Series X|S · PlayStation 4 · Xbox One · Windows · GNU/Linux · Nintendo Switch · PlayStation 5</dd></div>
           <div><dt>Estudio</dt><dd><a href="http://www.eskemagames.es/" target="_blank" rel="noreferrer">Eskema Games ↗</a></dd></div>
-        </dl>
-        <ul class="responsibility-list" aria-label="Tareas realizadas en Space Revenge">
+        </dl><ul class="responsibility-list" aria-label="Tareas realizadas en Space Revenge">
           <li>Modelado 3D</li>
           <li>Creación de UI</li>
           <li>Diseño de escenarios</li>
           <li>Partículas</li>
           <li>Imágenes promocionales y concepts de referencia</li>
           <li>Logos y apoyo gráfico para marketing</li>
-        </ul>
+        </ul></div>
+          <div class="work-overview-description">
+            <span class="work-overview-draft">Texto provisional</span>
+            <p>Una aventura de acción ambientada en un universo de ciencia ficción, donde los escenarios y la atmósfera acompañan cada enfrentamiento.</p>
+            <p>Esta presentación reunirá el trabajo visual, los recursos creados y las decisiones tomadas durante el desarrollo del proyecto.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="work-development section-shell" aria-labelledby="development-title">
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-rows">
+        <article class="work-development-row" aria-labelledby="development-stage-1">
+          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+        <article class="work-development-row" aria-labelledby="development-stage-3">
+          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="work-trailer section-shell" aria-label="Tráiler pendiente">
+      <div class="work-trailer-placeholder"><span aria-hidden="true">▷</span><h2>Tráiler pendiente</h2><p>Espacio reservado para el tráiler del proyecto.</p></div>
+    </section>
+
     <section class="work-gallery section-shell" aria-labelledby="gallery-title">
       <div class="work-gallery-heading"><div><h2 id="gallery-title">Galería</h2></div><p>Aquí incorporaremos las imágenes y sus descripciones.</p></div>
       <figure class="work-gallery-slide"><img src="assets/works/trabajo_02/Logo definitivo.jpg" alt="Logo del trabajo 02" loading="lazy"><figcaption>Material provisional</figcaption></figure>
