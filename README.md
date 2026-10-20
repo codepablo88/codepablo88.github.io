@@ -44,6 +44,7 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 - `projects.html`, `works.html` y `prototyping.html`: secciones con sus fichas y enlaces a los detalles.
 - Los proyectos no tienen páginas internas: sus tarjetas enlazan directamente a sus breakdowns de ArtStation en una pestaña nueva.
 - Sus miniaturas usan GIF de cinco segundos en `assets/projects/previews/`. `project-previews.js` respeta la preferencia de reducir movimiento, mostrando las portadas estáticas.
+- Los trabajos con vídeo también usan GIF de cinco segundos en `assets/works/previews/`, con el mismo script; los demás mantienen sus portadas estáticas hasta incorporar sus vídeos.
 - `home.css` y `home.js`: tarjetas de inicio y compatibilidad con los antiguos enlaces a secciones.
 - `listing.css` y `listing.js`: estilos y carruseles de las páginas de sección.
 - `styles.css` y `project.css`: estilos compartidos.
