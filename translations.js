@@ -430,5 +430,7 @@ window.portfolioEnglish = {
   "Este espacio recogerá el proceso de creación de escenarios, preparación de assets e integración visual de la aplicación.": "This space will cover environment creation, asset preparation and the application’s visual integration.",
   "Una simulación de un entorno comercial pensada para explorar situaciones y tareas mediante una experiencia de realidad virtual.": "A retail environment simulation designed to explore situations and tasks through a virtual reality experience.",
   "El desarrollo mostrará cómo se organizan los espacios, se preparan los elementos del escenario y se construye una experiencia visual coherente.": "The development section will show how spaces are organised, scene elements are prepared and a coherent visual experience is built.",
-  "Enlace de ArtStation pendiente": "ArtStation link pending"
+  "Enlace de ArtStation pendiente": "ArtStation link pending",
+  "Pausar animaciones": "Pause animations",
+  "Reanudar animaciones": "Resume animations"
 };
