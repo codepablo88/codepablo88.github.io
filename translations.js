@@ -398,5 +398,10 @@ window.portfolioEnglish = {
   "Diseño de entornos - Set Dressing": "Environment design - Set Dressing",
   "Animaciones": "Animations",
   "Iluminación": "Lighting",
-  "Arte promocional y marketing": "Promotional art and marketing"
+  "Arte promocional y marketing": "Promotional art and marketing",
+  "Septiembre 2026": "September 2026",
+  "WIP 03 · En desarrollo": "WIP 03 · In development",
+  "Primera vista del prototipo": "First look at the prototype",
+  "Diario de desarrollo pendiente de ampliar.": "Development journal to be expanded.",
+  "FINGERBOARDING-XR — prototipo de Pablo Escribano.": "FINGERBOARDING-XR — a prototype by Pablo Escribano."
 };
