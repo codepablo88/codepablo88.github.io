@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="listing.css">
+  <link rel="stylesheet" href="prototype-cards.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -41,58 +42,30 @@
         <div><p class="section-index">02 / Prototyping</p><h2 id="prototyping-title">Prototyping</h2></div>
         <p>Pruebas, sistemas y experiencias interactivas en proceso de desarrollo.</p>
       </div>
-      <div class="prototype-carousel">
+      <div class="prototype-carousel prototype-carousel--feature">
         <div class="prototype-carousel-controls" aria-label="Navegación del diario de prototipos">
           <button type="button" data-prototype-direction="-1" aria-label="Ver prototipo anterior">←</button>
           <button type="button" data-prototype-direction="1" aria-label="Ver prototipo siguiente">→</button>
         </div>
         <div class="prototype-carousel-viewport">
         <div id="prototype-track" class="prototype-journal" aria-label="Diario de prototipos en desarrollo">
-          <article class="prototype-log">
-          <header class="prototype-log-header">
-            <time class="prototype-log-date" datetime="2026-03">Marzo 2026</time>
-            <span class="prototype-log-index">WIP 01 · En desarrollo</span>
-          </header>
-          <div class="prototype-log-body">
-            <div class="prototype-log-media">
-              <video controls muted playsinline preload="metadata" poster="assets/prototyping/procedural 3D printing support tool/portada.png">
-                <source src="assets/prototyping/procedural 3D printing support tool/Wip_mod.mp4" type="video/mp4">
-                Tu navegador no puede reproducir este vídeo.
-              </video>
-            </div>
-            <div class="prototype-log-copy">
-              <p class="prototype-log-type">Houdini · Procedural R&amp;D · 3D Printing</p>
+          <article class="prototype-log prototype-log--feature">
+            <header class="prototype-log-header">
+              <time class="prototype-log-date" datetime="2026-03">Marzo 2026</time>
               <h3>Procedural 3D Printing Support Tool</h3>
-              <p>Primera fase de investigación de una herramienta capaz de detectar voladizos y generar soportes adaptativos mientras el modelo se actualiza en tiempo real.</p>
-              <ul class="prototype-log-points" aria-label="Avances de esta versión">
-                <li>Adaptive bases</li><li>Smart detection</li><li>Collision avoidance</li><li>Live interaction</li>
-              </ul>
-              <a class="prototype-log-link" href="procedural-support-tool.html">Ver desarrollo completo <span>↗</span></a>
-            </div>
-          </div>
+              <span class="prototype-log-index">WIP 01 · En desarrollo</span>
+            </header>
+            <a class="prototype-feature-media" href="procedural-support-tool.html"><img src="assets/prototyping/procedural 3D printing support tool/portada.png" alt="Procedural 3D Printing Support Tool" loading="lazy"></a>
+            <div class="prototype-feature-footer"><a class="prototype-log-link" href="procedural-support-tool.html">Ver desarrollo completo <span aria-hidden="true">↗</span></a></div>
           </article>
-          <article class="prototype-log">
+          <article class="prototype-log prototype-log--feature">
             <header class="prototype-log-header">
               <time class="prototype-log-date" datetime="2026-08">Agosto 2026</time>
+              <h3>Cozy Game</h3>
               <span class="prototype-log-index">WIP 02 · En desarrollo</span>
             </header>
-            <div class="prototype-log-body">
-              <div class="prototype-log-media">
-                <video controls muted playsinline preload="metadata" poster="assets/prototyping/cozy game/imagen de portada para card.png">
-                  <source src="assets/prototyping/cozy game/01 — Planting &amp; Growth System.mp4" type="video/mp4">
-                  Tu navegador no puede reproducir este vídeo.
-                </video>
-              </div>
-              <div class="prototype-log-copy">
-                <p class="prototype-log-type">Gameplay · Visual Development · Prototype</p>
-                <h3>Cozy Game</h3>
-                <p>Exploración inicial de una experiencia relajada centrada en interacciones sencillas, un entorno acogedor y sistemas de juego que iremos definiendo durante el desarrollo.</p>
-                <ul class="prototype-log-points" aria-label="Áreas provisionales de desarrollo">
-                  <li>Cozy atmosphere</li><li>Gameplay systems</li><li>Visual exploration</li><li>World interaction</li>
-                </ul>
-                <a class="prototype-log-link" href="cozy-game.html">Ver desarrollo completo <span>↗</span></a>
-              </div>
-            </div>
+            <a class="prototype-feature-media" href="cozy-game.html"><img src="assets/sections/prototyping.png" alt="Cozy Game" loading="lazy"></a>
+            <div class="prototype-feature-footer"><a class="prototype-log-link" href="cozy-game.html">Ver desarrollo completo <span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
         </div>
