@@ -42,7 +42,7 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 
 - `index.html`: inicio con tres tarjetas de acceso y contacto.
 - `projects.html`, `works.html` y `prototyping.html`: secciones con sus fichas y enlaces a los detalles.
-- Los proyectos no tienen páginas internas: sus tarjetas se enlazarán directamente a los breakdowns de ArtStation cuando se incorporen las direcciones.
+- Los proyectos no tienen páginas internas: sus tarjetas enlazan directamente a sus breakdowns de ArtStation en una pestaña nueva.
 - `home.css` y `home.js`: tarjetas de inicio y compatibilidad con los antiguos enlaces a secciones.
 - `listing.css` y `listing.js`: estilos y carruseles de las páginas de sección.
 - `styles.css` y `project.css`: estilos compartidos.
