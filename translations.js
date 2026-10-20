@@ -393,5 +393,10 @@ window.portfolioEnglish = {
   "Nivel de plataformas y obstáculos": "Platforming and obstacle level",
   "Interacción con plataformas": "Platform interaction",
   "Capturas y material visual de The Long Jump.": "Screenshots and visual material from The Long Jump.",
-  "10 de mayo de 2023": "May 10, 2023"
+  "10 de mayo de 2023": "May 10, 2023",
+  "Artista 2D": "2D artist",
+  "Diseño de entornos - Set Dressing": "Environment design - Set Dressing",
+  "Animaciones": "Animations",
+  "Iluminación": "Lighting",
+  "Arte promocional y marketing": "Promotional art and marketing"
 };
