@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="delta-overview.css">
   <style>
+    .work-development-image{padding:0;border:0;background:none}
+    .work-development-copy>p:not(.work-development-stage){margin:0;color:var(--muted);font-size:14px;line-height:1.8}
+    .work-development-copy>p+p{margin-top:14px}
     .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}
     .prototype-title-hero{display:flex;min-height:610px;align-items:flex-end;padding:150px 0 90px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 45%,rgba(255,101,44,.12),transparent 25%),repeating-linear-gradient(90deg,transparent 0 79px,rgba(255,255,255,.025) 80px),repeating-linear-gradient(0deg,transparent 0 79px,rgba(255,255,255,.025) 80px)}
     .prototype-title-copy{width:min(100% - 64px,1400px);margin:0 auto}.prototype-title-copy .back-link{display:inline-block;margin-bottom:72px}.prototype-title-copy h1{max-width:1200px;margin:18px 0 26px;font:clamp(50px,7.5vw,118px)/.86 var(--display);letter-spacing:-6px;text-transform:uppercase}.prototype-title-copy h1 em{color:transparent;font-style:normal;-webkit-text-stroke:2px #777}.prototype-title-summary{display:flex;justify-content:space-between;gap:40px;padding-top:24px;border-top:1px solid #333}.prototype-title-summary p{max-width:650px;margin:0;color:#bbb;font-size:17px;line-height:1.65}.prototype-title-status{color:var(--acid);font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;white-space:nowrap}
@@ -41,25 +44,24 @@
   </header>
 
   <main>
-    <section class="prototype-title-hero"><div class="prototype-title-copy"><a class="back-link" href="prototyping.html#prototyping">← Volver a prototyping</a><p class="eyebrow"><span></span>XR · Prototype</p><h1 style="font-size:clamp(28px,6vw,96px);letter-spacing:-1px">FINGERBOARDING<br><em>XR</em></h1><div class="prototype-title-summary"><p>FINGERBOARDING-XR</p><span class="prototype-title-status">Work in progress · 2026</span></div></div></section>
+    <section class="prototype-title-hero"><div class="prototype-title-copy"><a class="back-link" href="prototyping.html#prototyping">← Volver a prototyping</a><p class="eyebrow"><span></span>XR · Prototype</p><h1 style="font-size:clamp(28px,6vw,96px);letter-spacing:-1px">FINGERBOARDING<br><em>XR</em></h1></div></section>
     <section class="work-development section-shell" aria-labelledby="development-title">
-      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/cover.png?v=2" alt="FINGERBOARDING-XR" loading="lazy"></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Primera vista del prototipo</h3><p>Diario de desarrollo pendiente de ampliar.</p></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboardingxr.gif" alt="Interacción directa" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy" lang="en"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Direct interaction</h3><p>The player controls the virtual skateboard directly with their hands. Finger-scale contact replaces conventional buttons and controllers, keeping the interaction close to the gestures of physical fingerboarding.</p><p>Picking up the board, positioning the fingers and attempting a trick all happen in the same mixed reality space, without switching interaction modes.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural_ramp.gif" alt="Rampas procedurales" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy" lang="en"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Board physics</h3><p>The physics system turns small hand movements into force, rotation and momentum. The board responds continuously to finger input, the table and the geometry of each obstacle rather than relying on predefined trick animations.</p><p>This makes every attempt slightly different and keeps balance, timing, collisions and recovery at the centre of the experience.</p></div>
         </article>
         <article class="work-development-row" aria-labelledby="development-stage-3">
-          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="Skatepark en realidad mixta" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy" lang="en"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Real-time procedural generation</h3><p>The environment is built from procedural obstacles instead of fixed assets. In-world controls let the player place a ramp on the physical surface and modify its form and proportions while the geometry updates in real time.</p><p>The generated obstacle remains immediately playable, creating a continuous loop between level design and interaction: reshape the ramp, test a line and adjust it again without leaving mixed reality.</p></div>
         </article>
       </div>
     </section>
-    <section class="project-next section-shell"><p class="section-index">Contacto</p><h2>¿Hablamos de<br>XR?</h2><div><a href="index.html#contacto">Contactar ↗</a><a href="prototyping.html#prototyping">Volver a prototyping ↑</a></div></section>
   </main>
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.linkedin.com/posts/pabloescribanobastante_chitubox-lycheeslicer-houdini-activity-7437107099387625472-G9XT" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="index.html">Inicio</a></div></footer>
