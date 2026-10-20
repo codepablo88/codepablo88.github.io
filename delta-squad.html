@@ -21,6 +21,7 @@
     @media(max-width:900px){.work-responsibilities-visual img{aspect-ratio:1/1}.work-gallery-slide{flex-basis:88%}}
     @media(max-width:520px){.work-gallery-slide{flex-basis:94%}}
   </style>
+  <link rel="stylesheet" href="delta-overview.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -44,20 +45,13 @@
   </header>
 
   <main>
-    <section class="project-hero delta-hero">
-      <img src="assets/works/trabajo_01/Game Logo_Wallpaper 2.jpg" alt="Logo de Delta Squad">
-      <div class="project-hero-shade"></div>
-      <div class="project-hero-copy section-shell">
-        <a class="back-link" href="works.html#trabajos">← Volver a trabajos</a>
-        <p class="eyebrow"><span></span> Unity · Game Development · 3D</p>
-        <h1>Delta<br><em>Squad</em></h1>
-      </div>
-      <span class="project-scroll">Explorar trabajo ↓</span>
-    </section>
-
-    <section class="work-responsibilities section-shell">
-      <div class="work-responsibilities-visual"><img src="assets/works/trabajo_01/PRODUCT_IMAGE_FB.png" alt="Imagen promocional de Delta Squad" loading="lazy"></div>
-      <div class="work-responsibilities-copy">
+    <div class="work-overview-back section-shell"><a class="back-link" href="works.html#trabajos">← Volver a trabajos</a></div>
+    <section class="work-overview section-shell" aria-labelledby="work-title">
+      <h1 id="work-title" class="sr-only">Delta Squad</h1>
+      <div class="work-overview-grid">
+        <div class="work-overview-art"><img src="assets/works/trabajo_01/PRODUCT_IMAGE_FB.png" alt="Imagen promocional de Delta Squad" width="1080" height="1080" fetchpriority="high"></div>
+        <div class="work-overview-info">
+          <div class="work-overview-panel">
         <div class="work-platforms-detail" aria-label="Disponible en Steam, PlayStation 4, Xbox y Nintendo Switch"><img src="assets/works/icons/steam.png" alt="Steam"><img src="assets/works/icons/ps4.png" alt="PlayStation 4"><img src="assets/works/icons/xbox.png" alt="Xbox"><img src="assets/works/icons/switch.png" alt="Nintendo Switch"></div>
         <dl class="work-facts">
           <div><dt>Steam</dt><dd>29 de mayo</dd></div>
@@ -72,6 +66,12 @@
           <li>Imágenes promocionales y concepts de referencia</li>
           <li>Logos y apoyo gráfico para marketing</li>
         </ul>
+          </div>
+          <div class="work-overview-description">
+            <p>Delta Squad es un arcade de la vieja escuela dispuesto a traernos de vuelta esos momentos que todos los que crecimos en los 90 aún recordamos, pero con un aspecto visual moderno y adaptado a los nuevos tiempos.</p>
+            <p>Juega solo o reúne hasta 4 amigos para jugar en cooperativo local y detener las fuerzas del General Rumanovsky, que desea acabar con el mundo.</p>
+          </div>
+        </div>
       </div>
     </section>
 
