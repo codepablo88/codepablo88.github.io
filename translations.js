@@ -392,5 +392,6 @@ window.portfolioEnglish = {
   "Escenario de cueva": "Cave environment",
   "Nivel de plataformas y obstáculos": "Platforming and obstacle level",
   "Interacción con plataformas": "Platform interaction",
-  "Capturas y material visual de The Long Jump.": "Screenshots and visual material from The Long Jump."
+  "Capturas y material visual de The Long Jump.": "Screenshots and visual material from The Long Jump.",
+  "10 de mayo de 2023": "May 10, 2023"
 };
