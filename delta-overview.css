@@ -1,9 +1,9 @@
 .work-overview-back{padding-top:30px;padding-bottom:28px;font-size:13px;color:var(--muted)}
 .work-overview-back a:hover{color:var(--text)}
 .work-overview{padding-bottom:30px}
-.work-overview-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
-.work-overview-art{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#080808}
-.work-overview-art img{display:block;width:100%;height:auto}
+.work-overview-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:stretch}
+.work-overview-art{position:relative;min-height:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#080808}
+.work-overview-art img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .work-overview-info{display:flex;min-width:0;flex-direction:column;gap:18px}
 .work-overview-panel{padding:28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,rgba(255,101,44,.035),transparent 55%),rgba(12,12,12,.8)}
 .work-overview .work-platforms-detail{gap:16px;min-height:44px}
@@ -16,5 +16,5 @@
 .work-overview-description{display:grid;gap:12px}
 .work-overview-description p{margin:0;padding:16px 20px;border:1px solid #263541;border-left:2px solid var(--acid);border-radius:6px;background:#101c26;color:#bdc6cc;font-size:13px;line-height:1.75}
 @media(max-width:1100px){.work-overview-grid{gap:22px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}.work-overview-panel{padding:20px}}
-@media(max-width:900px){.work-overview-grid{grid-template-columns:1fr;gap:26px}.work-overview-art{width:100%;max-width:540px;margin:auto}.work-overview-back{padding-top:24px;padding-bottom:24px}}
+@media(max-width:900px){.work-overview-grid{grid-template-columns:1fr;gap:26px}.work-overview-art{width:100%;max-width:540px;aspect-ratio:1/1;margin:auto}.work-overview-back{padding-top:24px;padding-bottom:24px}}
 @media(max-width:520px){.work-overview-panel{padding:18px;border-radius:12px}.work-overview-art{border-radius:12px}.work-overview .responsibility-list{grid-template-columns:1fr}.work-overview .responsibility-list li{min-height:0;padding-block:16px}.work-overview .responsibility-list li::before{top:16px}.work-overview-description p{padding:14px 16px}.work-overview .work-facts div{flex-direction:row;align-items:baseline}.work-overview .work-facts dd{text-align:right}}
