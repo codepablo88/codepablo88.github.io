@@ -405,5 +405,6 @@ window.portfolioEnglish = {
   "Diario de desarrollo pendiente de ampliar.": "Development journal to be expanded.",
   "FINGERBOARDING-XR — prototipo de Pablo Escribano.": "FINGERBOARDING-XR — a prototype by Pablo Escribano.",
   "Delta Squad es un arcade de la vieja escuela dispuesto a traernos de vuelta esos momentos que todos los que crecimos en los 90 aún recordamos, pero con un aspecto visual moderno y adaptado a los nuevos tiempos.": "Delta Squad is an old-school arcade game that brings back the moments those of us who grew up in the 90s still remember, with a modern look adapted to today.",
-  "Juega solo o reúne hasta 4 amigos para jugar en cooperativo local y detener las fuerzas del General Rumanovsky, que desea acabar con el mundo.": "Play solo or gather up to 4 friends for local co-op and stop the forces of General Rumanovsky, who wants to destroy the world."
+  "Juega solo o reúne hasta 4 amigos para jugar en cooperativo local y detener las fuerzas del General Rumanovsky, que desea acabar con el mundo.": "Play solo or gather up to 4 friends for local co-op and stop the forces of General Rumanovsky, who wants to destroy the world.",
+  "Tráiler de Delta Squad": "Delta Squad trailer"
 };
