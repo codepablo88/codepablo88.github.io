@@ -10,18 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="delta-overview.css">
   <style>
     .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}
     .prototype-title-hero{display:flex;min-height:610px;align-items:flex-end;padding:150px 0 90px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 45%,rgba(255,101,44,.12),transparent 25%),repeating-linear-gradient(90deg,transparent 0 79px,rgba(255,255,255,.025) 80px),repeating-linear-gradient(0deg,transparent 0 79px,rgba(255,255,255,.025) 80px)}
     .prototype-title-copy{width:min(100% - 64px,1400px);margin:0 auto}.prototype-title-copy .back-link{display:inline-block;margin-bottom:72px}.prototype-title-copy h1{max-width:1200px;margin:18px 0 26px;font:clamp(50px,7.5vw,118px)/.86 var(--display);letter-spacing:-6px;text-transform:uppercase}.prototype-title-copy h1 em{color:transparent;font-style:normal;-webkit-text-stroke:2px #777}.prototype-title-summary{display:flex;justify-content:space-between;gap:40px;padding-top:24px;border-top:1px solid #333}.prototype-title-summary p{max-width:650px;margin:0;color:#bbb;font-size:17px;line-height:1.65}.prototype-title-status{color:var(--acid);font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;white-space:nowrap}
-    .logbook-intro{padding:120px 0 85px}.logbook-intro h2{margin:0;font:clamp(44px,5.6vw,84px)/.95 var(--display);letter-spacing:-4px;text-transform:uppercase}.logbook-intro h2 span{color:transparent;-webkit-text-stroke:1px #777}
-    .prototype-logbook{position:relative;padding:0 0 140px}.prototype-logbook::before{content:'';position:absolute;top:0;bottom:140px;left:26px;width:1px;background:linear-gradient(var(--acid),#333 70%,transparent)}.logbook-bottom-fade{position:fixed;z-index:5;right:0;bottom:0;left:0;height:250px;background:linear-gradient(transparent 0,rgba(8,8,8,.28) 25%,rgba(8,8,8,.86) 72%,var(--bg) 100%);opacity:0;pointer-events:none;transition:opacity .3s}.prototype-logbook.is-visible .logbook-bottom-fade{opacity:1}
-    .logbook-entry{position:relative;width:min(calc(100% - 72px),980px);margin:0 0 24px 72px;border:1px solid #343434;border-radius:15px;background:linear-gradient(135deg,rgba(255,101,44,.055),transparent 36%),rgba(15,15,15,.94)}.logbook-entry::before{content:'';position:absolute;z-index:2;top:23px;left:-53px;width:11px;height:11px;border:3px solid var(--bg);border-radius:50%;background:var(--acid);box-shadow:0 0 0 1px var(--acid)}
-    .logbook-entry-header{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:17px 22px;border-bottom:1px solid var(--line)}.logbook-entry-header time{color:#fff;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}.logbook-entry-number{color:var(--acid);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-    .logbook-entry-body{display:grid;grid-template-columns:minmax(255px,.82fr) 1.18fr;overflow:hidden;border-radius:0 0 15px 15px}.logbook-media{min-width:0;margin:0;border-right:1px solid var(--line);background:#050505}.logbook-media img,.logbook-media video{display:block;width:100%;height:100%;min-height:255px;object-fit:contain}.logbook-media-placeholder{display:grid;min-height:255px;place-items:center;background:repeating-linear-gradient(115deg,transparent 0 28px,rgba(255,255,255,.018) 29px 30px),#0a0a0a;color:#4f4f4f;font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}.logbook-copy{display:flex;flex-direction:column;justify-content:center;padding:26px 30px}.logbook-kicker{margin:0 0 9px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}.logbook-copy h3{margin:0 0 13px;font:clamp(21px,2.3vw,32px)/1.04 var(--display);letter-spacing:-1.2px;text-transform:uppercase}.logbook-copy>p:not(.logbook-kicker){margin:0;color:#aaa;font-size:13px;line-height:1.65}.logbook-points{display:grid;gap:0;margin:18px 0 0;padding:0;border-top:1px solid var(--line);list-style:none}.logbook-points li{position:relative;padding:8px 8px 8px 25px;border-bottom:1px solid var(--line);color:#d3d3d3;font-size:11px}.logbook-points li::before{content:'↗';position:absolute;left:2px;color:var(--acid);font-weight:700}
-    .logbook-entry-note{margin:18px 28px 0 100px;padding:0 0 34px;color:#666;font-size:11px;letter-spacing:1px;text-transform:uppercase}
-    @media(max-width:900px){.prototype-title-copy{width:min(100% - 40px,700px)}.prototype-title-copy h1{letter-spacing:-4px}.prototype-title-summary,.logbook-intro{grid-template-columns:1fr}.prototype-title-summary{display:grid}.logbook-intro{gap:35px;padding-top:90px}.logbook-entry{width:calc(100% - 72px)}.logbook-entry-body{grid-template-columns:1fr}.logbook-media{border-right:0;border-bottom:1px solid var(--line)}.logbook-media img,.logbook-media video{min-height:0;aspect-ratio:16/9}.logbook-media-placeholder{min-height:260px}.logbook-entry-note{margin-left:72px}}
-    @media(max-width:520px){.brand-logo{width:155px;height:42px}.prototype-title-hero{min-height:540px;padding:110px 0 65px}.prototype-title-copy{width:calc(100% - 28px)}.prototype-title-copy .back-link{margin-bottom:55px}.prototype-title-copy h1{font-size:48px;letter-spacing:-2.5px}.prototype-title-copy h1 em{-webkit-text-stroke-width:1px}.prototype-title-summary{gap:20px}.logbook-intro h2{letter-spacing:-2px}.prototype-logbook::before{left:8px}.logbook-entry{width:calc(100% - 28px);margin-left:28px;border-radius:12px}.logbook-entry::before{left:-27px}.logbook-entry-header{padding:17px}.logbook-entry-body{display:block}.logbook-copy{padding:30px 22px}.logbook-entry-note{margin-left:28px}}
+    @media(max-width:900px){.prototype-title-copy{width:min(100% - 40px,700px)}.prototype-title-copy h1{letter-spacing:-4px}.prototype-title-summary{display:grid}}
+    @media(max-width:520px){.brand-logo{width:155px;height:42px}.prototype-title-hero{min-height:540px;padding:110px 0 65px}.prototype-title-copy{width:calc(100% - 28px)}.prototype-title-copy .back-link{margin-bottom:55px}.prototype-title-copy h1{font-size:48px;letter-spacing:-2.5px}.prototype-title-copy h1 em{-webkit-text-stroke-width:1px}.prototype-title-summary{gap:20px}}
   </style>
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
@@ -47,12 +42,22 @@
 
   <main>
     <section class="prototype-title-hero"><div class="prototype-title-copy"><a class="back-link" href="prototyping.html#prototyping">← Volver a prototyping</a><p class="eyebrow"><span></span>XR · Prototype</p><h1 style="font-size:clamp(28px,6vw,96px);letter-spacing:-1px">FINGERBOARDING<br><em>XR</em></h1><div class="prototype-title-summary"><p>FINGERBOARDING-XR</p><span class="prototype-title-status">Work in progress · 2026</span></div></div></section>
-    <section class="logbook-intro section-shell"><p class="section-index">01 / Diario de desarrollo</p><h2>Fases</h2></section>
-    <section class="prototype-logbook section-shell">
-      <article class="logbook-entry">
-        <header class="logbook-entry-header"><time datetime="2026-09">Septiembre 2026</time><span class="logbook-entry-number">WIP 03 · En desarrollo</span></header>
-        <div class="logbook-entry-body"><div class="logbook-media"><img src="assets/prototyping/fingerboarding-xr/cover.png?v=2" alt="FINGERBOARDING-XR" loading="lazy"></div><div class="logbook-copy"><h3>Primera vista del prototipo</h3><p>Diario de desarrollo pendiente de ampliar.</p></div></div>
-      </article>
+    <section class="work-development section-shell" aria-labelledby="development-title">
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-rows">
+        <article class="work-development-row" aria-labelledby="development-stage-1">
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/cover.png?v=2" alt="FINGERBOARDING-XR" loading="lazy"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Primera vista del prototipo</h3><p>Diario de desarrollo pendiente de ampliar.</p></div>
+        </article>
+        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+        <article class="work-development-row" aria-labelledby="development-stage-3">
+          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+        </article>
+      </div>
     </section>
     <section class="project-next section-shell"><p class="section-index">Contacto</p><h2>¿Hablamos de<br>XR?</h2><div><a href="index.html#contacto">Contactar ↗</a><a href="prototyping.html#prototyping">Volver a prototyping ↑</a></div></section>
   </main>

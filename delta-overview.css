@@ -20,6 +20,8 @@
 @media(max-width:900px){.work-development-heading{display:block}.work-development-heading>p{margin-top:20px}.work-development-row{gap:24px;padding:20px}.work-development-copy{padding:0}}
 @media(max-width:640px){.work-development{padding-block:44px}.work-development-row{grid-template-columns:1fr;padding:16px;gap:24px}.work-development-row--reverse .work-development-image,.work-development-row--reverse .work-development-copy{grid-column:auto;grid-row:auto}.work-development-heading h2{letter-spacing:-1px}.work-development-rows{gap:24px}}
 .work-trailer{padding-top:20px;padding-bottom:10px}
+.work-trailer iframe{display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:16px;background:#080808}
+.work-trailer>p{margin:12px 0 0;font-size:14px;color:var(--muted)}
 .work-trailer-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;aspect-ratio:16/9;padding:24px;border:1px dashed #444;border-radius:16px;background:linear-gradient(135deg,rgba(255,101,44,.04),transparent),#101010;text-align:center}
 .work-trailer-placeholder>span{font-size:60px;line-height:1;color:var(--acid)}
 .work-trailer-placeholder h2{margin:18px 0 12px;font:clamp(20px,2.5vw,34px)/1.2 var(--display)}

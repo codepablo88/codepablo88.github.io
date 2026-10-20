@@ -431,5 +431,7 @@ window.portfolioEnglish = {
   "Una simulación de un entorno comercial pensada para explorar situaciones y tareas mediante una experiencia de realidad virtual.": "A retail environment simulation designed to explore situations and tasks through a virtual reality experience.",
   "El desarrollo mostrará cómo se organizan los espacios, se preparan los elementos del escenario y se construye una experiencia visual coherente.": "The development section will show how spaces are organised, scene elements are prepared and a coherent visual experience is built.",
   "Enlace de ArtStation pendiente": "ArtStation link pending",
-  "Tráiler de SUNU": "SUNU trailer"
+  "Tráiler de SUNU": "SUNU trailer",
+  "Tráiler de Space Revenge": "Space Revenge trailer",
+  "Ver en YouTube ↗": "Watch on YouTube ↗"
 };
