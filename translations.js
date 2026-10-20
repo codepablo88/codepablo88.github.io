@@ -388,5 +388,9 @@ window.portfolioEnglish = {
   "Puzzle platformer — trabajo de Pablo Escribano. Contenido en desarrollo.": "Puzzle platformer — work by Pablo Escribano. Content in development.",
   "Puzzle Platformer — trabajo de Pablo Escribano. Contenido en desarrollo.": "Puzzle Platformer — work by Pablo Escribano. Content in development.",
   "VR Industrial Simulation — trabajo de Pablo Escribano. Contenido en desarrollo.": "VR Industrial Simulation — work by Pablo Escribano. Content in development.",
-  "VR Retail Simulation — trabajo de Pablo Escribano. Contenido en desarrollo.": "VR Retail Simulation — work by Pablo Escribano. Content in development."
+  "VR Retail Simulation — trabajo de Pablo Escribano. Contenido en desarrollo.": "VR Retail Simulation — work by Pablo Escribano. Content in development.",
+  "Escenario de cueva": "Cave environment",
+  "Nivel de plataformas y obstáculos": "Platforming and obstacle level",
+  "Interacción con plataformas": "Platform interaction",
+  "Capturas y material visual de The Long Jump.": "Screenshots and visual material from The Long Jump."
 };

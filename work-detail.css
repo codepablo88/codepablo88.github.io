@@ -10,4 +10,5 @@
     @media(max-width:520px){.work-gallery-slide{flex-basis:94%}}
   
 .work-gallery-placeholder{display:grid;place-items:center;width:100%;aspect-ratio:16/9;border:1px dashed #444;border-radius:16px;background:linear-gradient(135deg,rgba(255,101,44,.06),transparent),#111;color:var(--muted);font-size:14px}
+.work-gallery--uncropped .work-gallery-slide img{object-fit:contain;background:#111}
 @media(prefers-reduced-motion:reduce){.work-gallery-track{scroll-behavior:auto}}
