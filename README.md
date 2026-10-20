@@ -47,6 +47,7 @@ de la web permanece igual y el historial conserva las versiones guardadas.
 - `styles.css` y `project.css`: estilos compartidos.
 - `language.js` y `translations.js`: selector de idioma y traducciones al inglés.
 - `cozy-game.html` y `procedural-support-tool.html`: diarios de prototipos.
+- `trabajo-03.html` a `trabajo-06.html`: fichas iniciales de los trabajos pendientes, con la estructura de Delta Squad; comparten `work-detail.css` y `work-detail.js`.
 - Resto de HTML: páginas de detalle de proyectos y trabajos.
 - `assets/`: imágenes, vídeos, logotipos y CV descargable.
 
