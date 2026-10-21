@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="work-detail.css">
   <link rel="stylesheet" href="delta-overview.css">
   <style>
+    .work-development-image--filled{padding:0;border:0;overflow:hidden;background:none}
+    .work-development-image--filled img{width:100%;height:100%;aspect-ratio:16/9;object-fit:cover}
+    .work-development-image--sprite{padding:16px;border:0;background:#1a1a1a;flex-direction:row;gap:16px}
+    .work-development-image--sprite img{width:calc((100% - 16px)/2);max-width:256px;height:auto;min-width:0;image-rendering:pixelated}
     .work-overview-art img{inset:0 auto 0 50%;width:auto;min-width:100%;max-width:none;height:100%;transform:translateX(-32.5%)}
   </style>
   <script src="translations.js" defer></script>
@@ -57,10 +61,9 @@
           <li>Iluminación</li>
           <li>Arte promocional y marketing</li>
         </ul></div>
-          <div class="work-overview-description">
-            <span class="work-overview-draft">Texto provisional</span>
-            <p>Una propuesta de plataformas y puzles con una identidad visual en pixel art, escenarios de cuevas y retos de exploración.</p>
-            <p>El apartado de desarrollo recogerá el trabajo de arte 2D, la composición de escenarios, las animaciones y los efectos que dan forma a la experiencia.</p>
+          <div class="work-overview-description" lang="en">
+            <p>Let aztec gods help you overcome jumps in this puzzle platformer.</p>
+            <p>This project was meant for a Jam and it's open source.</p>
           </div>
         </div>
       </div>
@@ -70,16 +73,16 @@
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--filled"><img src="assets/works/trabajo_03/TLJ_01.png" alt="Creación de sprites y animaciones" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><h3 id="development-stage-1">Creación de personaje y props con Aseprite</h3><p>Creación en Aseprite de los sprites del personaje y los elementos del entorno. La paleta de color, las siluetas y los detalles en pixel art conectan al protagonista con los tótems y otros props de inspiración azteca.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--sprite"><img src="assets/works/trabajo_03/run-animation.gif" alt="Animación de carrera del personaje" loading="lazy" decoding="async"><img src="assets/works/trabajo_03/ovum-animation.gif" alt="Animación de Ovum" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><h3 id="development-stage-2">Creación de animaciones</h3><p>Animación fotograma a fotograma de la carrera del personaje y del efecto de Ovum. Las secuencias en bucle aportan movimiento al pixel art y permiten trabajar el ritmo y la continuidad entre poses.</p></div>
         </article>
         <article class="work-development-row" aria-labelledby="development-stage-3">
-          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--filled"><img src="assets/works/trabajo_03/1.JPG" alt="Escenario de cueva" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><h3 id="development-stage-3">Set dressing en Unity</h3><p>Montaje del escenario en Unity combinando plataformas, vegetación, rocas y elementos decorativos. La distribución de los sprites y las capas del fondo aportan profundidad a la cueva y ayudan a distinguir el recorrido jugable.</p></div>
         </article>
       </div>
     </section>
@@ -96,10 +99,9 @@
       </div>
       <div class="work-gallery-viewport">
         <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/1.JPG" alt="Escenario de cueva" loading="lazy"><figcaption><span>Escenario de cueva</span><span>01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/2gdMcv.jpg" alt="Nivel de plataformas y obstáculos" loading="lazy"><figcaption><span>Nivel de plataformas y obstáculos</span><span>02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/AFo7sp.jpg" alt="Interacción con plataformas" loading="lazy"><figcaption><span>Interacción con plataformas</span><span>03</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/FY_PtI.jpg" alt="The Long Jump" loading="lazy"><figcaption><span>The Long Jump</span><span>04</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/2gdMcv.jpg" alt="Nivel de plataformas y obstáculos" loading="lazy"><figcaption><span>Nivel de plataformas y obstáculos</span><span>01</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/AFo7sp.jpg" alt="Interacción con plataformas" loading="lazy"><figcaption><span>Interacción con plataformas</span><span>02</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/FY_PtI.jpg" alt="The Long Jump" loading="lazy"><figcaption><span>The Long Jump</span><span>03</span></figcaption></figure>
         </div>
       </div>
     </section>
