@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="listing.css">
-  <link rel="stylesheet" href="prototype-cards.css">
+  <link rel="stylesheet" href="project-previews.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -41,47 +41,26 @@
       <div class="section-heading">
         <div><h2 id="prototyping-title">Prototyping</h2></div>
       </div>
-      <div class="prototype-carousel prototype-carousel--feature">
-        <div class="prototype-carousel-controls" aria-label="Navegación del diario de prototipos">
-          <button type="button" data-prototype-direction="-1" aria-label="Ver prototipo anterior">←</button>
-          <button type="button" data-prototype-direction="1" aria-label="Ver prototipo siguiente">→</button>
-        </div>
-        <div class="prototype-carousel-viewport">
-        <div id="prototype-track" class="prototype-journal" aria-label="Diario de prototipos en desarrollo">
-          <article class="prototype-log prototype-log--feature">
-            <header class="prototype-log-header">
-              <time class="prototype-log-date" datetime="2026-03">Marzo 2026</time>
-              <h3>Procedural 3D Printing Support Tool</h3>
-              <span class="prototype-log-index">WIP 01 · En desarrollo</span>
-            </header>
-            <a class="prototype-feature-media" href="procedural-support-tool.html"><img src="assets/prototyping/previews/printing-support.gif" data-static-src="assets/prototyping/procedural 3D printing support tool/portada.png" data-preview-src="assets/prototyping/previews/printing-support.gif" alt="Procedural 3D Printing Support Tool" loading="lazy" decoding="async"></a>
-            <div class="prototype-feature-footer"><a class="prototype-log-link" href="procedural-support-tool.html">Ver desarrollo completo <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="prototype-log prototype-log--feature">
-            <header class="prototype-log-header">
-              <time class="prototype-log-date" datetime="2026-08">Agosto 2026</time>
-              <h3>Cozy Game</h3>
-              <span class="prototype-log-index">WIP 02 · En desarrollo</span>
-            </header>
-            <a class="prototype-feature-media" href="cozy-game.html"><img src="assets/prototyping/previews/cozy-game.gif" data-static-src="assets/prototyping/previews/cozy-game.jpg" data-preview-src="assets/prototyping/previews/cozy-game.gif" alt="Cozy Game" loading="lazy" decoding="async"></a>
-            <div class="prototype-feature-footer"><a class="prototype-log-link" href="cozy-game.html">Ver desarrollo completo <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="prototype-log prototype-log--feature">
-            <header class="prototype-log-header">
-              <time class="prototype-log-date" datetime="2026-09">Septiembre 2026</time>
-              <h3>FINGERBOARDING-XR</h3>
-              <span class="prototype-log-index">WIP 03 · En desarrollo</span>
-            </header>
-            <a class="prototype-feature-media" href="fingerboarding-xr.html"><img src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" data-static-src="assets/prototyping/fingerboarding-xr/cover.png?v=2" data-preview-src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="FINGERBOARDING-XR" loading="lazy" decoding="async"></a>
-            <div class="prototype-feature-footer"><a class="prototype-log-link" href="fingerboarding-xr.html">Ver desarrollo completo <span aria-hidden="true">↗</span></a></div>
-          </article>
-        </div>
-        </div>
+      <div class="projects-grid">
+        <article class="case-study">
+          <a class="case-cover" href="fingerboarding-xr.html"><img class="project-cover-image" src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" data-static-src="assets/prototyping/fingerboarding-xr/cover.png?v=2" data-preview-src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="FINGERBOARDING-XR" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><p class="project-type"><time class="prototype-log-date" datetime="2026-09">Septiembre 2026</time> <span aria-hidden="true">·</span> <span>WIP 03 · En desarrollo</span></p><h3>FINGERBOARDING-XR</h3></div></div>
+          <a class="project-breakdown-link" href="fingerboarding-xr.html">Ver desarrollo completo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="cozy-game.html"><img class="project-cover-image" src="assets/prototyping/previews/cozy-game.gif" data-static-src="assets/prototyping/previews/cozy-game.jpg" data-preview-src="assets/prototyping/previews/cozy-game.gif" alt="Cozy Game" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><p class="project-type"><time class="prototype-log-date" datetime="2026-08">Agosto 2026</time> <span aria-hidden="true">·</span> <span>WIP 02 · En desarrollo</span></p><h3>Cozy Game</h3></div></div>
+          <a class="project-breakdown-link" href="cozy-game.html">Ver desarrollo completo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="procedural-support-tool.html"><img class="project-cover-image" src="assets/prototyping/previews/printing-support.gif" data-static-src="assets/prototyping/procedural 3D printing support tool/portada.png" data-preview-src="assets/prototyping/previews/printing-support.gif" alt="Procedural 3D Printing Support Tool" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><p class="project-type"><time class="prototype-log-date" datetime="2026-03">Marzo 2026</time> <span aria-hidden="true">·</span> <span>WIP 01 · En desarrollo</span></p><h3>Procedural 3D Printing Support Tool</h3></div></div>
+          <a class="project-breakdown-link" href="procedural-support-tool.html">Ver desarrollo completo</a>
+        </article>
       </div>
     </section>
   </main>
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.artstation.com/artpablo" target="_blank" rel="noopener noreferrer">ArtStation</a><a href="https://www.youtube.com/@artpablo88" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://alblo-studio.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a><a href="https://www.linkedin.com/in/pabloescribanobastante/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="index.html#inicio">Volver arriba ↑</a></div></footer>
-  <script src="listing.js"></script>
   <script src="project-previews.js"></script>
 </body>
 </html>

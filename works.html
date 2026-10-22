@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="listing.css">
+  <link rel="stylesheet" href="project-previews.css">
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -40,50 +41,41 @@
       <div class="section-heading">
         <div><h2 id="works-title">Trabajos</h2></div>
       </div>
-      <div class="works-carousel">
-        <div class="works-controls" aria-label="Navegación de trabajos">
-          <button type="button" data-works-direction="-1" aria-label="Ver trabajo anterior">←</button>
-          <button type="button" data-works-direction="1" aria-label="Ver trabajo siguiente">→</button>
-        </div>
-        <div class="works-viewport">
-          <div id="works-track" class="works-track" aria-label="Trabajos">
-            <a class="work-card work-card-real work-card--full-cover" href="delta-squad.html">
-              <img class="work-card-image" src="assets/works/trabajo_01/Imagen de portada de card.png" data-static-src="assets/works/trabajo_01/Imagen de portada de card.png" data-preview-src="assets/works/previews/delta-squad.gif" alt="Portada del videojuego Delta Squad" loading="lazy" decoding="async">
-              <h3>Top-down action arcade game</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-            <a class="work-card work-card-real work-card--full-cover" href="trabajo-02.html">
-              <img class="work-card-image" src="assets/works/trabajo_02/Imagen de portada de card.png" data-static-src="assets/works/trabajo_02/Imagen de portada de card.png" data-preview-src="assets/works/previews/space-revenge.gif" alt="Portada del videojuego Space Revenge" loading="lazy" decoding="async">
-              <h3>Top-down action-adventure game</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-            <a class="work-card work-card-real work-card--full-cover" href="trabajo-03.html">
-              <img class="work-card-image" src="assets/works/trabajo_03/imagen para portada de card.png" data-static-src="assets/works/trabajo_03/imagen para portada de card.png" data-preview-src="assets/works/previews/the-long-jump.gif" alt="Portada del proyecto Puzzle platformer" loading="lazy" decoding="async">
-              <h3>Puzzle platformer</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-            <a class="work-card work-card-real work-card--full-cover" href="trabajo-04.html">
-              <img class="work-card-image" src="assets/works/trabajo_04/imagen para portada de card.png" data-static-src="assets/works/trabajo_04/imagen para portada de card.png" data-preview-src="assets/works/previews/sunu.gif" alt="Portada del proyecto Puzzle Platformer" loading="lazy" decoding="async">
-              <h3>Puzzle Platformer</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-            <a class="work-card work-card-real work-card--full-cover" href="trabajo-05.html">
-              <img class="work-card-image" src="assets/works/trabajo_05/imagen para portada de card.png" alt="Portada del proyecto VR Industrial Simulation">
-              <h3>VR Industrial Simulation</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-            <a class="work-card work-card-real work-card--full-cover" href="trabajo-06.html">
-              <img class="work-card-image" src="assets/works/trabajo_06/imagen para portada de card.png" alt="Portada del proyecto VR Retail Simulation">
-              <h3>VR Retail Simulation</h3>
-              <div class="work-card-bottom"><span>Ver trabajo</span><span>↗</span></div>
-            </a>
-          </div>
-        </div>
+      <div class="projects-grid">
+        <article class="case-study">
+          <a class="case-cover" href="delta-squad.html"><img class="project-cover-image" src="assets/works/trabajo_01/Imagen de portada de card.png" data-static-src="assets/works/trabajo_01/Imagen de portada de card.png" data-preview-src="assets/works/previews/delta-squad.gif" alt="Portada del videojuego Delta Squad" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><h3>Top-down action arcade game</h3></div></div>
+          <a class="project-breakdown-link" href="delta-squad.html">Ver trabajo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="space-revenge.html"><img class="project-cover-image" src="assets/works/trabajo_02/Imagen de portada de card.png" data-static-src="assets/works/trabajo_02/Imagen de portada de card.png" data-preview-src="assets/works/previews/space-revenge.gif" alt="Portada del videojuego Space Revenge" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><h3>Top-down action-adventure game</h3></div></div>
+          <a class="project-breakdown-link" href="space-revenge.html">Ver trabajo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="the-long-jump.html"><img class="project-cover-image" src="assets/works/trabajo_03/imagen para portada de card.png" data-static-src="assets/works/trabajo_03/imagen para portada de card.png" data-preview-src="assets/works/previews/the-long-jump.gif" alt="Portada del proyecto Puzzle platformer" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><h3>Puzzle platformer</h3></div></div>
+          <a class="project-breakdown-link" href="the-long-jump.html">Ver trabajo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="sunu.html"><img class="project-cover-image" src="assets/works/trabajo_04/imagen para portada de card.png" data-static-src="assets/works/trabajo_04/imagen para portada de card.png" data-preview-src="assets/works/previews/sunu.gif" alt="Portada del proyecto Puzzle Platformer" loading="lazy" decoding="async"></a>
+          <div class="case-intro"><div><h3>Puzzle Platformer</h3></div></div>
+          <a class="project-breakdown-link" href="sunu.html">Ver trabajo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="vr-industrial-simulation.html"><img class="project-cover-image" src="assets/works/trabajo_05/imagen para portada de card.png" alt="Portada del proyecto VR Industrial Simulation"></a>
+          <div class="case-intro"><div><h3>VR Industrial Simulation</h3></div></div>
+          <a class="project-breakdown-link" href="vr-industrial-simulation.html">Ver trabajo</a>
+        </article>
+        <article class="case-study">
+          <a class="case-cover" href="vr-retail-simulation.html"><img class="project-cover-image" src="assets/works/trabajo_06/imagen para portada de card.png" alt="Portada del proyecto VR Retail Simulation"></a>
+          <div class="case-intro"><div><h3>VR Retail Simulation</h3></div></div>
+          <a class="project-breakdown-link" href="vr-retail-simulation.html">Ver trabajo</a>
+        </article>
       </div>
     </section>
   </main>
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="https://www.artstation.com/artpablo" target="_blank" rel="noopener noreferrer">ArtStation</a><a href="https://www.youtube.com/@artpablo88" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://alblo-studio.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a><a href="https://www.linkedin.com/in/pabloescribanobastante/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="index.html#inicio">Volver arriba ↑</a></div></footer>
-  <script src="listing.js"></script>
   <script src="project-previews.js"></script>
 </body>
 </html>
