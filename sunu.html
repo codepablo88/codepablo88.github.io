@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="work-detail.css">
   <link rel="stylesheet" href="delta-overview.css">
+  <style>
+    .work-development-image--sprites{flex-direction:row;gap:6px;padding:8px;border:0;background:#1a1a1a;overflow:hidden}
+    .work-development-image--sprites img{width:calc((100% - 12px)/3);max-width:none;height:auto;border-radius:0}
+  </style>
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -67,8 +71,12 @@
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--sprites">
+            <img src="assets/works/trabajo_04/pharaoh-animation-01.gif" data-static-src="assets/works/trabajo_04/pharaoh-animation-01.png" data-preview-src="assets/works/trabajo_04/pharaoh-animation-01.gif" alt="SUNU · 01" width="136" height="216" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_04/pharaoh-animation-02.gif" data-static-src="assets/works/trabajo_04/pharaoh-animation-02.png" data-preview-src="assets/works/trabajo_04/pharaoh-animation-02.gif" alt="SUNU · 02" width="136" height="216" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_04/pharaoh-animation-03.gif" data-static-src="assets/works/trabajo_04/pharaoh-animation-03.png" data-preview-src="assets/works/trabajo_04/pharaoh-animation-03.gif" alt="SUNU · 03" width="136" height="216" loading="lazy" decoding="async">
+          </div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Animación tradicional</h3><p>Todo el arte 2D y las animaciones de SUNU están creados a mano.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
           <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
@@ -109,5 +117,6 @@
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="works.html#trabajos">Trabajos</a><a href="index.html">Inicio</a></div></footer>
   <script src="work-detail.js"></script>
+  <script src="project-previews.js"></script>
 </body>
 </html>

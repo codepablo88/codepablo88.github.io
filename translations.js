@@ -457,5 +457,7 @@ window.portfolioEnglish = {
   "Fingerboarding XR en tiempo real": "Fingerboarding XR in real time",
   "Desarrollo de rampas en Unity": "Ramp development in Unity",
   "Desarrollo del sistema de rampas procedurales en Unity, trabajando la forma y las proporciones de los obstáculos mediante parámetros editables. Las pruebas en el editor permiten observar cómo cambia la geometría al modificar cada ajuste.": "Developing the procedural ramp system in Unity, shaping obstacles and adjusting their proportions through editable parameters. Tests in the editor show how the geometry changes with each adjustment.",
-  "Esta fase sienta las bases de la herramienta que después permite crear y modificar el skatepark dentro de la experiencia de realidad mixta.": "This stage lays the groundwork for the tool used to create and reshape the skatepark within the mixed reality experience."
+  "Esta fase sienta las bases de la herramienta que después permite crear y modificar el skatepark dentro de la experiencia de realidad mixta.": "This stage lays the groundwork for the tool used to create and reshape the skatepark within the mixed reality experience.",
+  "Animación tradicional": "Traditional animation",
+  "Todo el arte 2D y las animaciones de SUNU están creados a mano.": "All of SUNU’s 2D art and animations are created by hand."
 };

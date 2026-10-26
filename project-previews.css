@@ -1,1 +1,11 @@
 @media(prefers-reduced-motion:reduce){.projects-grid .case-cover:hover .project-cover-image{transform:none;transition:none}}
+
+.card-footer-row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:12px 2px 10px;border-bottom:1px solid var(--line)}
+.card-footer-row .project-breakdown-link{padding:0;border:0;min-width:0}
+.card-tools{display:flex;align-items:flex-end;gap:12px;flex-shrink:0}
+.card-tools img{display:block;width:36px;height:36px;object-fit:contain;transform-origin:center bottom}
+.card-tools .card-tool-unity{transform:scale(1.08)}
+.card-tools .card-tool-blender{transform:scale(1.12)}
+@media(max-width:520px){.card-footer-row{gap:12px}.card-tools{gap:8px}.card-tools img{width:30px;height:30px}.card-footer-row .project-breakdown-link{font-size:11px}}
+
+.projects-grid .case-study>.project-breakdown-link,.projects-grid .case-study>.card-footer-row{margin-top:auto}
