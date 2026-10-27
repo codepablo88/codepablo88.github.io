@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="work-detail.css">
   <link rel="stylesheet" href="delta-overview.css">
+  <style>
+    .work-development-image--video{padding:0;border:0;overflow:hidden;background:#111}
+    .work-development-image--video video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:10px}
+  </style>
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -39,23 +43,19 @@
     <section class="work-overview section-shell" aria-labelledby="work-title">
       <h1 id="work-title" class="sr-only">VR Industrial Simulation</h1>
       <div class="work-overview-grid">
-        <div class="work-overview-art"><img src="assets/works/trabajo_05/imagen para portada de card.png" alt="VR Industrial Simulation" fetchpriority="high"></div>
+        <div class="work-overview-art"><img src="assets/works/trabajo_05/Texturizado.jpg" alt="VR Industrial Simulation" fetchpriority="high"></div>
         <div class="work-overview-info">
-          <div class="work-overview-panel"><dl class="work-facts" aria-label="Ficha del trabajo">
-          <div><dt>Rol</dt><dd>Por definir</dd></div>
-          <div><dt>Plataformas</dt><dd>Por definir</dd></div>
-          <div><dt>Fecha</dt><dd>Por definir</dd></div>
-          <div><dt>Estudio</dt><dd>Por definir</dd></div>
+          <div class="work-overview-panel"><div class="work-platforms-detail" role="group" aria-label="Blender, Unity"><img src="assets/icons/blender icon.png" alt="Blender" title="Blender" width="36" height="36"><img src="assets/icons/unity icon.png" alt="Unity" title="Unity" width="36" height="36"></div><dl class="work-facts" aria-label="Ficha del trabajo">
+          <div><dt>Rol</dt><dd>Modelador 3D y editor de vídeo</dd></div>
+          <div><dt>Software</dt><dd>Unity y Meta Quest 3</dd></div>
+          <div><dt>Project</dt><dd>Marina</dd></div>
         </dl><ul class="responsibility-list" aria-label="Funciones principales">
-          <li>Tarea 01 · Por definir</li>
-          <li>Tarea 02 · Por definir</li>
-          <li>Tarea 03 · Por definir</li>
-          <li>Tarea 04 · Por definir</li>
-          <li>Tarea 05 · Por definir</li>
-          <li>Tarea 06 · Por definir</li>
+          <li>Modelado hard surface y texturizado de piezas específicas del astillero</li>
+          <li>Modelado de entornos</li>
+          <li>Edición de vídeo de tutoriales</li>
+          <li>Diseño de UI</li>
         </ul></div>
           <div class="work-overview-description">
-            <span class="work-overview-draft">Texto provisional</span>
             <p>Una experiencia inmersiva centrada en la representación de un entorno industrial y sus posibilidades de interacción en realidad virtual.</p>
             <p>Este espacio recogerá el proceso de creación de escenarios, preparación de assets e integración visual de la aplicación.</p>
           </div>
@@ -64,15 +64,15 @@
     </section>
 
     <section class="work-development section-shell" aria-labelledby="development-title">
-      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--video"><video controls playsinline preload="metadata" poster="assets/works/trabajo_05/autor-visualizacion-poster.jpg?v=2" aria-label="Autor y visualización"><source src="assets/works/trabajo_05/autor-visualizacion-recortado.mp4?v=2" type="video/mp4"></video></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Herramienta de autor</h3><p>Datasets, casos de uso y creación de escenas a partir de datos extraídos</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image"><img src="assets/works/trabajo_05/clips2-preview.gif?v=2" data-static-src="assets/works/trabajo_05/clips2-preview.jpg?v=2" data-preview-src="assets/works/trabajo_05/clips2-preview.gif?v=2" alt="Marina · 02" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Entorno virtual interactivo</h3><p>Experiencia virtual para procesos y aprendizajes dentro de un astillero</p></div>
         </article>
         <article class="work-development-row" aria-labelledby="development-stage-3">
           <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
@@ -81,30 +81,10 @@
       </div>
     </section>
 
-    <section class="work-trailer section-shell" aria-label="Tráiler pendiente">
-      <div class="work-trailer-placeholder"><span aria-hidden="true">▷</span><h2>Tráiler pendiente</h2><p>Espacio reservado para el tráiler del proyecto.</p></div>
-    </section>
 
-    <section class="work-gallery section-shell" aria-labelledby="gallery-title">
-      <div class="work-gallery-heading"><div><h2 id="gallery-title">Galería</h2></div><p>Imágenes y descripciones pendientes de incorporar.</p></div>
-      <div class="work-gallery-controls" aria-label="Navegación de la galería">
-        <button type="button" data-gallery-direction="-1" aria-label="Ver imagen anterior">←</button>
-        <button type="button" data-gallery-direction="1" aria-label="Ver imagen siguiente">→</button>
-      </div>
-      <div class="work-gallery-viewport">
-        <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_05/imagen para portada de card.png" alt="VR Industrial Simulation" loading="lazy"><figcaption><span>Imagen de portada</span><span>01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>03</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>04</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>05</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>06</span></figcaption></figure>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="works.html#trabajos">Trabajos</a><a href="index.html">Inicio</a></div></footer>
-  <script src="work-detail.js"></script>
+  <script src="project-previews.js"></script>
 </body>
 </html>

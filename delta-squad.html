@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
   <style>
+    .work-development .work-development-image--ui{padding:0;border:0;background:none;overflow:hidden}
+    .work-development .work-development-image--montage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));aspect-ratio:16/9;gap:6px;padding:0;border:0;border-radius:10px;overflow:hidden;background:#1a1a1a}
+    .work-development .work-development-image--montage img{display:block;width:100%;height:100%;min-height:0;object-fit:cover;border-radius:0}
     .brand-logo{display:block;width:190px;height:52px;object-fit:contain;object-position:left center}.delta-hero>img{object-position:center}.delta-hero .project-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.08) 68%),linear-gradient(0deg,rgba(0,0,0,.8),transparent 58%)}.work-responsibilities{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;padding:125px 0 135px}.work-responsibilities h2,.work-gallery-heading h2{margin:0;font:clamp(44px,5.6vw,84px)/.95 var(--display);letter-spacing:-3px;text-transform:uppercase}.work-responsibilities h2 span{color:transparent;-webkit-text-stroke:1px #777}.work-responsibilities-visual img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border:1px solid #292929;border-radius:16px;background:#111}.work-responsibilities-copy{padding-top:10px;color:var(--muted)}.work-responsibilities-copy .lead{margin-top:0;color:var(--text);font-size:22px}.work-facts{margin:38px 0 0}.work-facts div{display:flex;justify-content:space-between;gap:25px;padding:13px 0;border-top:1px solid var(--line);font-size:12px}.work-facts dt{color:#666;text-transform:uppercase;letter-spacing:1px}.work-facts dd{margin:0;text-align:right;color:#ddd}.work-facts a{color:var(--acid);border-bottom:1px solid rgba(255,101,44,.45)}.responsibility-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:42px 0 0;padding:0;border-top:1px solid var(--line);border-left:1px solid var(--line);list-style:none}.responsibility-list li{position:relative;min-height:82px;padding:27px 25px 22px 49px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);color:#ddd;font-size:14px}.responsibility-list li::before{content:'↗';position:absolute;left:22px;top:26px;color:var(--acid);font-weight:700}.work-gallery{padding-bottom:140px}.work-gallery-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;padding-top:110px;margin-bottom:45px;border-top:1px solid var(--line)}.work-gallery-heading p{max-width:420px;margin:0;color:var(--muted)}.work-gallery-controls{display:flex;justify-content:flex-end;gap:9px;margin-bottom:18px}.work-gallery-controls button{display:grid;place-items:center;width:45px;height:45px;padding:0;border:1px solid #3b3b3b;border-radius:50%;background:#101010;color:#fff;font-size:20px;cursor:pointer;transition:background .25s,border-color .25s,color .25s}.work-gallery-controls button:hover{border-color:var(--acid);background:var(--acid);color:#090909}.work-gallery-viewport{position:relative;overflow:hidden}.work-gallery-viewport::before,.work-gallery-viewport::after{content:'';position:absolute;z-index:3;top:0;bottom:0;width:7%;pointer-events:none;transition:opacity .3s}.work-gallery-viewport::before{left:-3%;opacity:0;background:linear-gradient(90deg,var(--bg),transparent)}.work-gallery-viewport::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}.work-gallery-viewport.is-scrolled::before{opacity:1}.work-gallery-viewport.is-at-end::after{opacity:0}.work-gallery-track{display:flex;gap:22px;overflow-x:auto;padding:5px 5% 30px;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}.work-gallery-track::-webkit-scrollbar{display:none}.work-gallery-slide{flex:0 0 76%;margin:0;scroll-snap-align:start}.work-gallery-slide img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid #292929;border-radius:16px}.work-gallery-slide figcaption{display:flex;justify-content:space-between;gap:20px;margin-top:12px;color:#fff;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}@media(max-width:900px){.work-responsibilities{grid-template-columns:1fr;gap:35px;padding:90px 0 100px}.work-gallery-heading{display:block;padding-top:85px}.work-gallery-heading p{margin-top:24px}.work-gallery-slide{flex-basis:88%}}@media(max-width:520px){.brand-logo{width:155px;height:42px}.work-responsibilities h2,.work-gallery-heading h2{letter-spacing:-2px}.work-responsibilities-visual img{border-radius:11px}.responsibility-list{grid-template-columns:1fr}.work-facts div{align-items:flex-start;flex-direction:column;gap:5px}.work-facts dd{text-align:left}.work-gallery-controls button{width:40px;height:40px}.work-gallery-track{gap:14px;padding-inline:3%}.work-gallery-slide{flex-basis:94%}.work-gallery-slide img{border-radius:11px}.work-gallery-slide figcaption{padding:0 8px;font-size:10px}}
     .work-responsibilities-copy{display:flex;flex-direction:column;justify-content:center}
     .work-responsibilities-visual{display:flex;min-width:0;flex-direction:column}
@@ -79,16 +82,26 @@
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--montage">
+            <img src="assets/works/trabajo_01/1.jpg" alt="Delta Squad · 1" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/2.jpg" alt="Delta Squad · 2" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/5.jpg" alt="Delta Squad · 5" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/7.jpg" alt="Delta Squad · 7" loading="lazy" decoding="async">
+          </div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Set dressing en Unity</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--ui"><img src="assets/works/trabajo_01/Diseño UI.jpg" alt="Diseño de interfaz de usuario de Delta Squad" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Diseño de interfaces</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
         <article class="work-development-row" aria-labelledby="development-stage-3">
-          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--montage">
+            <img src="assets/works/trabajo_01/Escena 1.jpg" alt="Delta Squad ? 1" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/Escena 2.jpg" alt="Delta Squad ? 2" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/Escena 3.jpg" alt="Delta Squad ? 3" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_01/Escena 5.jpg" alt="Delta Squad ? 5" loading="lazy" decoding="async">
+          </div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Arte conceptual para cinemáticas</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
       </div>
     </section>
@@ -108,12 +121,12 @@
       </div>
       <div class="work-gallery-viewport">
         <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/Diseño UI.jpg" alt="Diseño de interfaz de usuario de Delta Squad" loading="lazy"><figcaption><span>Diseño de interfaz</span><span>UI</span></figcaption></figure>
           <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/Scenario 1, b.jpg" alt="Vista aérea de un escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 01</span></figcaption></figure>
           <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/Scenario 1, c.jpg" alt="Segunda vista aérea del escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/2.jpg" alt="Captura del desarrollo de un escenario industrial en Unity" loading="lazy"><figcaption><span>Desarrollo en Unity</span><span>Entorno industrial</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/5.jpg" alt="Captura del desarrollo de una zona residencial en Unity" loading="lazy"><figcaption><span>Desarrollo en Unity</span><span>Zona residencial</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/7.jpg" alt="Captura del desarrollo de una plaza urbana en Unity" loading="lazy"><figcaption><span>Desarrollo en Unity</span><span>Plaza urbana</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/DeltaSquad_menu.jpg" alt="Delta Squad ? Menú principal" loading="lazy" decoding="async"><figcaption><span>Menú principal</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level1_DeltaSquad.jpg" alt="Delta Squad ? Nivel 1" loading="lazy" decoding="async"><figcaption><span>Nivel 1</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level2_DeltaSquad.jpg" alt="Delta Squad ? Nivel 2" loading="lazy" decoding="async"><figcaption><span>Nivel 2</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level4_DeltaSquad.jpg" alt="Delta Squad ? Nivel 4" loading="lazy" decoding="async"><figcaption><span>Nivel 4</span><span>Delta Squad</span></figcaption></figure>
         </div>
       </div>
     </section>

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="work-detail.css">
   <link rel="stylesheet" href="delta-overview.css">
   <style>
+    .work-play-label{margin:0;color:var(--acid);font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+    .work-development .work-development-image--atlas{padding:0;border:0;background:none;overflow:hidden}
     .work-development-image--sprites{flex-direction:row;gap:6px;padding:8px;border:0;background:#1a1a1a;overflow:hidden}
     .work-development-image--sprites img{width:calc((100% - 12px)/3);max-width:none;height:auto;border-radius:0}
   </style>
@@ -45,18 +47,17 @@
       <div class="work-overview-grid">
         <div class="work-overview-art"><img src="assets/works/trabajo_04/1.jpg" alt="Puzzle Platformer" fetchpriority="high"></div>
         <div class="work-overview-info">
-          <div class="work-overview-panel"><dl class="work-facts" aria-label="Ficha del trabajo">
-          <div><dt>Rol</dt><dd>Por definir</dd></div>
-          <div><dt>Plataformas</dt><dd>Por definir</dd></div>
-          <div><dt>Fecha</dt><dd>Por definir</dd></div>
-          <div><dt>Estudio</dt><dd>Por definir</dd></div>
+          <div class="work-overview-panel"><p class="work-play-label" lang="en">Playable in your browser</p><dl class="work-facts" aria-label="Ficha del trabajo">
+          <div><dt>Rol</dt><dd>Artista y animador 2D</dd></div>
+          <div><dt>Plataformas</dt><dd>PC</dd></div>
+          <div><dt>Fecha</dt><dd>Febrero 2025</dd></div>
+          <div><dt>Estudio</dt><dd><a href="https://alblo-studio.itch.io/" target="_blank" rel="noopener noreferrer">Alblo Studio ↗</a></dd></div>
         </dl><ul class="responsibility-list" aria-label="Funciones principales">
-          <li>Tarea 01 · Por definir</li>
-          <li>Tarea 02 · Por definir</li>
-          <li>Tarea 03 · Por definir</li>
-          <li>Tarea 04 · Por definir</li>
-          <li>Tarea 05 · Por definir</li>
-          <li>Tarea 06 · Por definir</li>
+          <li>Arte 2D para personajes, props y entornos</li>
+          <li>Animación 2D tradicional</li>
+          <li>Diseño de interfaces</li>
+          <li>Diseño de menús y logo del juego</li>
+          <li>Edición de vídeo promocional</li>
         </ul></div>
           <div class="work-overview-description">
             <span class="work-overview-draft">Texto provisional</span>
@@ -79,12 +80,8 @@
           <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Animación tradicional</h3><p>Todo el arte 2D y las animaciones de SUNU están creados a mano.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
-        </article>
-        <article class="work-development-row" aria-labelledby="development-stage-3">
-          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--atlas"><img src="assets/works/trabajo_04/atlas props.png" alt="Atlas de props de SUNU" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Diseño de props</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
       </div>
     </section>
@@ -104,12 +101,11 @@
       </div>
       <div class="work-gallery-viewport">
         <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/imagen para portada de card.png" alt="Puzzle Platformer" loading="lazy"><figcaption><span>Imagen de portada</span><span>01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>03</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>04</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>05</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>06</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/1.jpg" alt="SUNU ? 01" loading="lazy" decoding="async"><figcaption><span>SUNU</span><span>01</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/2.jpg" alt="SUNU ? 02" loading="lazy" decoding="async"><figcaption><span>SUNU</span><span>02</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/3.jpg" alt="SUNU ? 03" loading="lazy" decoding="async"><figcaption><span>SUNU</span><span>03</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/4.jpg" alt="SUNU ? 04" loading="lazy" decoding="async"><figcaption><span>SUNU</span><span>04</span></figcaption></figure>
+          <figure class="work-gallery-slide"><img src="assets/works/trabajo_04/5.jpg" alt="SUNU ? 05" loading="lazy" decoding="async"><figcaption><span>SUNU</span><span>05</span></figcaption></figure>
         </div>
       </div>
     </section>
