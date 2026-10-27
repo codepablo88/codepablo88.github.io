@@ -459,5 +459,17 @@ window.portfolioEnglish = {
   "Desarrollo del sistema de rampas procedurales en Unity, trabajando la forma y las proporciones de los obstáculos mediante parámetros editables. Las pruebas en el editor permiten observar cómo cambia la geometría al modificar cada ajuste.": "Developing the procedural ramp system in Unity, shaping obstacles and adjusting their proportions through editable parameters. Tests in the editor show how the geometry changes with each adjustment.",
   "Esta fase sienta las bases de la herramienta que después permite crear y modificar el skatepark dentro de la experiencia de realidad mixta.": "This stage lays the groundwork for the tool used to create and reshape the skatepark within the mixed reality experience.",
   "Animación tradicional": "Traditional animation",
-  "Todo el arte 2D y las animaciones de SUNU están creados a mano.": "All of SUNU’s 2D art and animations are created by hand."
+  "Todo el arte 2D y las animaciones de SUNU están creados a mano.": "All of SUNU’s 2D art and animations are created by hand.",
+  "Modelador 3D y editor de vídeo": "3D modeler and video editor",
+  "Prueba de la simulación con un visor de realidad virtual": "Testing the simulation with a virtual reality headset",
+  "Simulación y contextualización": "Simulation and context",
+  "Plataforma de realidad virtual con transferencia de conocimientos": "Virtual reality platform for knowledge transfer",
+  "Entornos virtuales realistas y modulares": "Realistic and modular virtual environments",
+  "La información se adaptará a futuras experiencias similares": "The information will be adapted to similar future experiences",
+  "Se utilizarán avatares que simularán las diferentes situaciones reales que podrían darse con los clientes en la caja de un supermercado": "Avatars will simulate the different real-life situations that could arise with customers at a supermarket checkout",
+  "Modelados en Blender al más mínimo detalle para proporcionar al usuario una experiencia inmersiva": "Modeled in Blender down to the smallest detail to provide the user with an immersive experience",
+  "Modelado y texturizado de la caja y de sus elementos": "Modeling and texturing the checkout and its components",
+  "Modelado de entornos inmersivos": "Modeling immersive environments",
+  "Diseño de interfaces e imágenes de tutoriales": "Interface design and tutorial images",
+  "Grabación y edición de vídeos para supuestos prácticos de la aplicación": "Recording and editing videos for practical scenarios in the application"
 };

@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="work-detail.css">
   <link rel="stylesheet" href="delta-overview.css">
+  <style>
+    .work-development-image--montage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0;border:0;overflow:hidden}
+    .work-development-image--montage img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;border-radius:0}
+    .work-overview-art img{top:-18.5%;bottom:auto;height:118.5%;object-fit:cover;object-position:center bottom}
+  </style>
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
@@ -41,18 +46,15 @@
       <div class="work-overview-grid">
         <div class="work-overview-art"><img src="assets/works/trabajo_06/imagen para portada de card.png" alt="VR Retail Simulation" fetchpriority="high"></div>
         <div class="work-overview-info">
-          <div class="work-overview-panel"><dl class="work-facts" aria-label="Ficha del trabajo">
-          <div><dt>Rol</dt><dd>Por definir</dd></div>
-          <div><dt>Plataformas</dt><dd>Por definir</dd></div>
-          <div><dt>Fecha</dt><dd>Por definir</dd></div>
-          <div><dt>Estudio</dt><dd>Por definir</dd></div>
+          <div class="work-overview-panel"><div class="work-platforms-detail" role="group" aria-label="Blender, Unity"><img src="assets/icons/blender icon.png" alt="Blender" title="Blender" width="36" height="36"><img src="assets/icons/unity icon.png" alt="Unity" title="Unity" width="36" height="36"></div><dl class="work-facts" aria-label="Ficha del trabajo">
+          <div><dt>Rol</dt><dd>Modelador 3D y editor de vídeo</dd></div>
+          <div><dt>Software</dt><dd>Unity and HTC Vive Pro</dd></div>
+          <div><dt>Project</dt><dd><a href="https://lableni.webs.upv.es/project/consum-vr-training/" target="_blank" rel="noopener noreferrer">Consum VR Training ↗</a></dd></div>
         </dl><ul class="responsibility-list" aria-label="Funciones principales">
-          <li>Tarea 01 · Por definir</li>
-          <li>Tarea 02 · Por definir</li>
-          <li>Tarea 03 · Por definir</li>
-          <li>Tarea 04 · Por definir</li>
-          <li>Tarea 05 · Por definir</li>
-          <li>Tarea 06 · Por definir</li>
+          <li>Modelado y texturizado de la caja y de sus elementos</li>
+          <li>Modelado de entornos inmersivos</li>
+          <li>Diseño de interfaces e imágenes de tutoriales</li>
+          <li>Grabación y edición de vídeos para supuestos prácticos de la aplicación</li>
         </ul></div>
           <div class="work-overview-description">
             <span class="work-overview-draft">Texto provisional</span>
@@ -64,47 +66,32 @@
     </section>
 
     <section class="work-development section-shell" aria-labelledby="development-title">
-      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
+      <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2></div>
       <div class="work-development-rows">
         <article class="work-development-row" aria-labelledby="development-stage-1">
-          <div class="work-development-image"><span aria-hidden="true">01</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image"><img src="assets/works/trabajo_06/Foto para artículo.jpg" alt="Prueba de la simulación con un visor de realidad virtual" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Simulación y contextualización</h3><p>La información se adaptará a futuras experiencias similares</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
-          <div class="work-development-image"><span aria-hidden="true">02</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image"><img src="assets/works/trabajo_06/tutorial-preview.gif?v=2" data-static-src="assets/works/trabajo_06/tutorial-preview.jpg?v=2" data-preview-src="assets/works/trabajo_06/tutorial-preview.gif?v=2" alt="VR Retail Simulation" loading="lazy" decoding="async"></div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Plataforma de realidad virtual con transferencia de conocimientos</h3><p>Se utilizarán avatares que simularán las diferentes situaciones reales que podrían darse con los clientes en la caja de un supermercado</p></div>
         </article>
         <article class="work-development-row" aria-labelledby="development-stage-3">
-          <div class="work-development-image"><span aria-hidden="true">03</span><p>Imagen de desarrollo pendiente</p></div>
-          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Explicación del proceso</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
+          <div class="work-development-image work-development-image--montage">
+            <img src="assets/works/trabajo_06/1.jpg" alt="VR Retail Simulation · 1" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_06/4.jpg" alt="VR Retail Simulation · 4" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_06/7.jpg" alt="VR Retail Simulation · 7" loading="lazy" decoding="async">
+            <img src="assets/works/trabajo_06/10.jpg" alt="VR Retail Simulation · 10" loading="lazy" decoding="async">
+          </div>
+          <div class="work-development-copy"><p class="work-development-stage">Fase 03</p><h3 id="development-stage-3">Entornos virtuales realistas y modulares</h3><p>Modelados en Blender al más mínimo detalle para proporcionar al usuario una experiencia inmersiva</p></div>
         </article>
       </div>
     </section>
 
-    <section class="work-trailer section-shell" aria-label="Tráiler pendiente">
-      <div class="work-trailer-placeholder"><span aria-hidden="true">▷</span><h2>Tráiler pendiente</h2><p>Espacio reservado para el tráiler del proyecto.</p></div>
-    </section>
 
-    <section class="work-gallery section-shell" aria-labelledby="gallery-title">
-      <div class="work-gallery-heading"><div><h2 id="gallery-title">Galería</h2></div><p>Imágenes y descripciones pendientes de incorporar.</p></div>
-      <div class="work-gallery-controls" aria-label="Navegación de la galería">
-        <button type="button" data-gallery-direction="-1" aria-label="Ver imagen anterior">←</button>
-        <button type="button" data-gallery-direction="1" aria-label="Ver imagen siguiente">→</button>
-      </div>
-      <div class="work-gallery-viewport">
-        <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_06/imagen para portada de card.png" alt="VR Retail Simulation" loading="lazy"><figcaption><span>Imagen de portada</span><span>01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>03</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>04</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>05</span></figcaption></figure>
-          <figure class="work-gallery-slide"><div class="work-gallery-placeholder">Imagen pendiente</div><figcaption><span>Material provisional</span><span>06</span></figcaption></figure>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div><a href="works.html#trabajos">Trabajos</a><a href="index.html">Inicio</a></div></footer>
-  <script src="work-detail.js"></script>
+  <script src="project-previews.js"></script>
 </body>
 </html>
