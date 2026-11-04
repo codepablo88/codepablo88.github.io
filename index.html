@@ -13,6 +13,7 @@
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
+  <link rel="stylesheet" href="card-frames.css">
 </head>
 <body>
   <header class="site-header">
@@ -44,8 +45,20 @@
           <a class="text-link" href="#contacto">Trabajemos juntos ↗</a>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <img class="hero-portrait" src="assets/profile/foto web.jpg" alt="">
+      <div class="hero-art hero-art--frame-preview hero-art--flip" tabindex="0" aria-label="Pablo Escribano">
+        <div class="portrait-flip-inner">
+          <div class="portrait-flip-face portrait-flip-front">
+            <span class="portrait-frame-corners" aria-hidden="true"></span>
+            <img class="hero-portrait" src="assets/profile/foto web.jpg" alt="Pablo Escribano">
+          </div>
+          <div class="portrait-flip-face portrait-flip-back">
+            <span class="portrait-frame-corners" aria-hidden="true"></span>
+            <div class="portrait-back-copy">
+              <p>Me licencié en Bellas Artes como artista tradicional, pasé por el concept art hasta descubrir Blender, y a día de hoy mis experiencias profesionales y la incursión de las nuevas tecnologías han reformulado mi rol y me han convertido en un technical artist. El desarrollo de juegos y aplicaciones para realidad virtual y su aportación a la sociedad son el motor sobre el que quiero asentar mi camino.</p>
+              <p>¡Bienvenidos! Espero que os guste todo lo que aquí os enseño, y si creéis que os puedo ser de ayuda, estoy a vuestra disposición.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <p class="scroll-label">Scroll to explore <span>↓</span></p>
     </section>
@@ -53,15 +66,18 @@
     <section id="secciones" class="section-directory section-shell" aria-labelledby="directory-title">
       <h2 id="directory-title" class="sr-only">Explorar secciones</h2>
       <div class="directory-grid">
-        <a class="directory-card" href="works.html">
+        <a class="directory-card directory-card--framed" href="works.html">
+          <span class="portrait-frame-corners" aria-hidden="true"></span>
           <div class="directory-image"><img src="assets/sections/works.jpg" alt="Prueba de una experiencia de realidad virtual"></div>
           <div class="directory-copy"><div class="directory-title"><h2>Trabajos</h2><span aria-hidden="true">↗</span></div><p>Experiencias laborales, aplicaciones inmersivas y videojuegos publicados</p></div>
         </a>
-        <a class="directory-card" href="projects.html">
+        <a class="directory-card directory-card--framed" href="projects.html">
+          <span class="portrait-frame-corners" aria-hidden="true"></span>
           <div class="directory-image"><img src="assets/sections/projects.png" alt="Poblado medieval junto al lago" fetchpriority="high"></div>
           <div class="directory-copy"><div class="directory-title"><h2>Proyectos</h2><span aria-hidden="true">↗</span></div><p>Generación procedural, arte 3D, y herramientas de optimización</p></div>
         </a>
-        <a class="directory-card" href="prototyping.html">
+        <a class="directory-card directory-card--framed" href="prototyping.html">
+          <span class="portrait-frame-corners" aria-hidden="true"></span>
           <div class="directory-image"><img src="assets/sections/prototyping.png" alt="Desarrollo del prototipo en Unity"></div>
           <div class="directory-copy"><div class="directory-title"><h2>Prototyping</h2><span aria-hidden="true">↗</span></div><p>Prototipado y diarios de experimentación</p></div>
         </a>
@@ -69,7 +85,7 @@
     </section>
 
     <section id="contacto" class="contact section-shell" aria-label="Contacto">
-      <div class="contact-panel">
+      <div class="contact-panel square-frame"><span class="square-frame-corners" aria-hidden="true"></span>
         <div class="contact-panel-intro">
           <p class="contact-panel-label">Contacto directo</p>
           <a class="contact-call-media" href="https://tenor.com/es/view/call-me-shaq-flirting-trendizisst-gif-25516806" target="_blank" rel="noopener noreferrer" aria-label="Ver GIF original"><img src="assets/contact/shaq-call.jpg" data-static-src="assets/contact/shaq-call.jpg" data-preview-src="assets/contact/shaq-call.gif" alt="Shaq haciendo el gesto de llamar" width="498" height="373" loading="lazy" decoding="async"></a>

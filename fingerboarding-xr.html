@@ -24,6 +24,7 @@
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
+  <link rel="stylesheet" href="card-frames.css">
 </head>
 <body>
   <header class="site-header">
@@ -48,19 +49,19 @@
     <section class="work-development section-shell" aria-labelledby="development-title">
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2></div>
       <div class="work-development-rows">
-        <article class="work-development-row" aria-labelledby="development-stage-1">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-1"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboarding-realtime.gif" alt="Fingerboarding XR en tiempo real" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-1">Desarrollo de rampas en Unity</h3><p>Desarrollo del sistema de rampas procedurales en Unity, trabajando la forma y las proporciones de los obstáculos mediante parámetros editables. Las pruebas en el editor permiten observar cómo cambia la geometría al modificar cada ajuste.</p><p>Esta fase sienta las bases de la herramienta que después permite crear y modificar el skatepark dentro de la experiencia de realidad mixta.</p></div>
         </article>
-        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+        <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-2"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboardingxr.gif" alt="Interacción directa" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-2">Interacción directa</h3><p>El jugador controla el skate virtual directamente con las manos. El contacto con los dedos sustituye a los botones y mandos convencionales, manteniendo una interacción cercana a los gestos del fingerboarding físico.</p><p>Coger la tabla, colocar los dedos e intentar un truco sucede en el mismo espacio de realidad mixta, sin cambiar de modo de interacción.</p></div>
         </article>
-        <article class="work-development-row" aria-labelledby="development-stage-3">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-3"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural_ramp.gif" alt="Rampas procedurales" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-3">Física de la tabla</h3><p>El sistema de física transforma los pequeños movimientos de las manos en fuerza, rotación e impulso. La tabla responde continuamente a la acción de los dedos, a la mesa y a la geometría de cada obstáculo, en lugar de recurrir a animaciones de trucos predefinidas.</p><p>Esto hace que cada intento sea ligeramente diferente y sitúa el equilibrio, el ritmo, las colisiones y la recuperación en el centro de la experiencia.</p></div>
         </article>
-        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-4">
+        <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-4"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="Skatepark en realidad mixta" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-4">Generación procedural en tiempo real</h3><p>El entorno se construye con obstáculos procedurales en lugar de recursos fijos. Los controles integrados en la escena permiten colocar una rampa sobre la superficie física y modificar su forma y proporciones mientras la geometría se actualiza en tiempo real.</p><p>El obstáculo generado se puede utilizar de inmediato, creando un ciclo continuo entre diseño de niveles e interacción: modificar la rampa, probar un recorrido y volver a ajustarla sin salir de la realidad mixta.</p></div>
         </article>

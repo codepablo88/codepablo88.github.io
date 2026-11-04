@@ -501,5 +501,7 @@ window.portfolioEnglish = {
   "Diseño de menús y logo del juego": "Game menu and logo design",
   "Edición de vídeo promocional": "Promotional video editing",
   "Artista y animador 2D": "2D artist and animator",
-  "Febrero 2025": "February 2025"
+  "Febrero 2025": "February 2025",
+  "Me licencié en Bellas Artes como artista tradicional, pasé por el concept art hasta descubrir Blender, y a día de hoy mis experiencias profesionales y la incursión de las nuevas tecnologías han reformulado mi rol y me han convertido en un technical artist. El desarrollo de juegos y aplicaciones para realidad virtual y su aportación a la sociedad son el motor sobre el que quiero asentar mi camino.": "I graduated in Fine Arts as a traditional artist, explored concept art and then discovered Blender. Today, my professional experience and the emergence of new technologies have reshaped my role and turned me into a technical artist. Developing games and virtual reality applications, and their contribution to society, are the driving forces behind the path I want to pursue.",
+  "¡Bienvenidos! Espero que os guste todo lo que aquí os enseño, y si creéis que os puedo ser de ayuda, estoy a vuestra disposición.": "Welcome! I hope you enjoy everything I share here, and if you think I could help you, I am at your disposal."
 };

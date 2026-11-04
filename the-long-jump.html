@@ -22,6 +22,7 @@
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
+  <link rel="stylesheet" href="card-frames.css">
 </head>
 <body>
   <header class="site-header">
@@ -46,9 +47,9 @@
     <section class="work-overview section-shell" aria-labelledby="work-title">
       <h1 id="work-title" class="sr-only">The Long Jump</h1>
       <div class="work-overview-grid">
-        <div class="work-overview-art"><img src="assets/works/trabajo_03/Banner youtube.jpg" alt="The Long Jump" fetchpriority="high"></div>
+        <div class="work-overview-art square-frame"><span class="square-frame-corners" aria-hidden="true"></span><div class="square-frame-image-clip"><img src="assets/works/trabajo_03/Banner youtube.jpg" alt="The Long Jump" fetchpriority="high"></div></div>
         <div class="work-overview-info">
-          <div class="work-overview-panel"><dl class="work-facts" aria-label="Ficha del trabajo">
+          <div class="work-overview-panel square-frame"><span class="square-frame-corners" aria-hidden="true"></span><dl class="work-facts" aria-label="Ficha del trabajo">
           <div><dt>Rol</dt><dd>2D Artist</dd></div>
           <div><dt>Plataformas</dt><dd><a href="https://alblo-studio.itch.io/the-long-jump" target="_blank" rel="noopener noreferrer">PC</a></dd></div>
           <div><dt>Fecha</dt><dd><time datetime="2023-05-10">10 de mayo de 2023</time></dd></div>
@@ -62,8 +63,8 @@
           <li>Arte promocional y marketing</li>
         </ul></div>
           <div class="work-overview-description" lang="en">
-            <p>Let aztec gods help you overcome jumps in this puzzle platformer.</p>
-            <p>This project was meant for a Jam and it's open source.</p>
+            <p class="square-frame"><span class="square-frame-corners" aria-hidden="true"></span>Let aztec gods help you overcome jumps in this puzzle platformer.</p>
+            <p class="square-frame"><span class="square-frame-corners" aria-hidden="true"></span>This project was meant for a Jam and it's open source.</p>
           </div>
         </div>
       </div>
@@ -72,15 +73,15 @@
     <section class="work-development section-shell" aria-labelledby="development-title">
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
       <div class="work-development-rows">
-        <article class="work-development-row" aria-labelledby="development-stage-1">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-1"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--filled"><img src="assets/works/trabajo_03/TLJ_01.png" alt="Creación de sprites y animaciones" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-1">Creación de personaje y props con Aseprite</h3><p>Creación en Aseprite de los sprites del personaje y los elementos del entorno. La paleta de color, las siluetas y los detalles en pixel art conectan al protagonista con los tótems y otros props de inspiración azteca.</p></div>
         </article>
-        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+        <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-2"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--sprite"><img src="assets/works/trabajo_03/run-animation.gif" alt="Animación de carrera del personaje" loading="lazy" decoding="async"><img src="assets/works/trabajo_03/ovum-animation.gif" alt="Animación de Ovum" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-2">Creación de animaciones</h3><p>Animación fotograma a fotograma de la carrera del personaje y del efecto de Ovum. Las secuencias en bucle aportan movimiento al pixel art y permiten trabajar el ritmo y la continuidad entre poses.</p></div>
         </article>
-        <article class="work-development-row" aria-labelledby="development-stage-3">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-3"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--filled"><img src="assets/works/trabajo_03/1.JPG" alt="Escenario de cueva" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-3">Set dressing en Unity</h3><p>Montaje del escenario en Unity combinando plataformas, vegetación, rocas y elementos decorativos. La distribución de los sprites y las capas del fondo aportan profundidad a la cueva y ayudan a distinguir el recorrido jugable.</p></div>
         </article>
@@ -88,7 +89,7 @@
     </section>
 
     <section class="work-trailer section-shell" aria-label="Tráiler de The Long Jump">
-      <video controls playsinline preload="metadata" poster="assets/works/trabajo_03/trailer-poster.jpg" width="1920" height="1080"><source src="assets/works/trabajo_03/Trailer_mod.mp4" type="video/mp4">Tu navegador no puede reproducir este vídeo.</video>
+      <div class="square-frame square-frame--player"><span class="square-frame-corners" aria-hidden="true"></span><video controls playsinline preload="metadata" poster="assets/works/trabajo_03/trailer-poster.jpg" width="1920" height="1080"><source src="assets/works/trabajo_03/Trailer_mod.mp4" type="video/mp4">Tu navegador no puede reproducir este vídeo.</video></div>
     </section>
 
     <section class="work-gallery work-gallery--uncropped section-shell" aria-labelledby="gallery-title">
@@ -99,9 +100,9 @@
       </div>
       <div class="work-gallery-viewport">
         <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/2gdMcv.jpg" alt="Nivel de plataformas y obstáculos" loading="lazy"><figcaption><span>Nivel de plataformas y obstáculos</span><span>01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/AFo7sp.jpg" alt="Interacción con plataformas" loading="lazy"><figcaption><span>Interacción con plataformas</span><span>02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_03/FY_PtI.jpg" alt="The Long Jump" loading="lazy"><figcaption><span>The Long Jump</span><span>03</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_03/2gdMcv.jpg" alt="Nivel de plataformas y obstáculos" loading="lazy"><figcaption><span>Nivel de plataformas y obstáculos</span><span>01</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_03/AFo7sp.jpg" alt="Interacción con plataformas" loading="lazy"><figcaption><span>Interacción con plataformas</span><span>02</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_03/FY_PtI.jpg" alt="The Long Jump" loading="lazy"><figcaption><span>The Long Jump</span><span>03</span></figcaption></figure>
         </div>
       </div>
     </section>

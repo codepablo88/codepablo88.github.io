@@ -29,3 +29,34 @@
 .contact-call-media{display:block;width:min(100%,280px);align-self:center;border-radius:10px;overflow:hidden}
 .contact-call-media img{display:block;width:100%;height:auto}
 .contact-call-media:focus-visible{outline:2px solid var(--acid);outline-offset:4px}
+
+/* Portrait preview of the new square frame treatment. */
+.hero-art--frame-preview{border:1px solid rgba(255,255,255,.85);border-radius:0;overflow:visible}
+.hero-art--frame-preview::before{display:none}
+.portrait-frame-corners{position:absolute;inset:0;z-index:4;pointer-events:none;--corner-size:42px;--corner-weight:8px;--corner-offset:-5px}
+.portrait-frame-corners::before,.portrait-frame-corners::after{content:'';position:absolute;width:var(--corner-size);height:var(--corner-size);border:0 solid #fff}
+.portrait-frame-corners::before{top:var(--corner-offset);left:var(--corner-offset);border-top-width:var(--corner-weight);border-left-width:var(--corner-weight)}
+.portrait-frame-corners::after{right:var(--corner-offset);bottom:var(--corner-offset);border-right-width:var(--corner-weight);border-bottom-width:var(--corner-weight)}
+@media(max-width:520px){.portrait-frame-corners{--corner-size:32px;--corner-weight:6px;--corner-offset:-4px}}
+
+/* Apply the approved frame to the three home section cards. */
+.directory-card--framed{position:relative;border:1px solid rgba(255,255,255,.85);border-radius:0;overflow:visible;box-shadow:none}
+.directory-card--framed .directory-image{border-radius:0}
+.directory-card--framed .portrait-frame-corners{--corner-size:28px}
+.directory-card--framed:hover,.directory-card--framed:focus-visible{border-color:rgba(255,255,255,.85);box-shadow:0 24px 55px rgba(0,0,0,.35)}
+
+/* Keep the hover area still while both framed faces turn together. */
+.hero-art--flip{perspective:1200px;border:0;background:none;isolation:auto}
+.hero-art--flip::after{display:none}
+.portrait-flip-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.2,.65,.3,1)}
+.hero-art--flip:hover .portrait-flip-inner,.hero-art--flip:focus .portrait-flip-inner{transform:rotateY(180deg)}
+.portrait-flip-face{position:absolute;inset:0;border:1px solid rgba(255,255,255,.85);backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-style:preserve-3d}
+.portrait-flip-front{transform:rotateY(0deg)}
+.portrait-flip-front::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.68),transparent 38%),linear-gradient(90deg,rgba(0,0,0,.12),transparent 45%);pointer-events:none}
+.portrait-flip-back{transform:rotateY(180deg);background:#111}
+.portrait-back-copy{position:absolute;inset:0;overflow:auto;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:safe center;gap:24px;scrollbar-width:thin}
+.hero-art .portrait-back-copy p{position:static;margin:0;color:var(--text);font:400 clamp(14px,1.15vw,17px)/1.75 var(--sans);text-transform:none;text-shadow:none}
+.hero-art .portrait-back-copy p:last-child{color:var(--muted)}
+@media(max-width:520px){.hero-art--flip{height:560px}}
+.hero-art--flip:focus-visible{outline:2px solid var(--acid);outline-offset:9px}
+@media(prefers-reduced-motion:reduce){.portrait-flip-inner{transition:none}}

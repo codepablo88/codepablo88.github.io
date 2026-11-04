@@ -28,6 +28,7 @@
   <script src="translations.js" defer></script>
   <script src="language.js" defer></script>
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
+  <link rel="stylesheet" href="card-frames.css">
 </head>
 <body>
   <header class="site-header">
@@ -52,9 +53,9 @@
     <section class="work-overview section-shell" aria-labelledby="work-title">
       <h1 id="work-title" class="sr-only">Delta Squad</h1>
       <div class="work-overview-grid">
-        <div class="work-overview-art"><img src="assets/works/trabajo_01/PRODUCT_IMAGE_FB.png" alt="Imagen promocional de Delta Squad" width="1080" height="1080" fetchpriority="high"></div>
+        <div class="work-overview-art square-frame"><span class="square-frame-corners" aria-hidden="true"></span><div class="square-frame-image-clip"><img src="assets/works/trabajo_01/PRODUCT_IMAGE_FB.png" alt="Imagen promocional de Delta Squad" width="1080" height="1080" fetchpriority="high"></div></div>
         <div class="work-overview-info">
-          <div class="work-overview-panel">
+          <div class="work-overview-panel square-frame"><span class="square-frame-corners" aria-hidden="true"></span>
         <div class="work-platforms-detail" aria-label="Disponible en Steam, PlayStation 4, Xbox y Nintendo Switch"><img src="assets/works/icons/steam.png" alt="Steam"><img src="assets/works/icons/ps4.png" alt="PlayStation 4"><img src="assets/works/icons/xbox.png" alt="Xbox"><img src="assets/works/icons/switch.png" alt="Nintendo Switch"></div>
         <dl class="work-facts">
           <div><dt>Steam</dt><dd>29 de mayo</dd></div>
@@ -71,8 +72,8 @@
         </ul>
           </div>
           <div class="work-overview-description">
-            <p>Delta Squad es un arcade de la vieja escuela dispuesto a traernos de vuelta esos momentos que todos los que crecimos en los 90 aún recordamos, pero con un aspecto visual moderno y adaptado a los nuevos tiempos.</p>
-            <p>Juega solo o reúne hasta 4 amigos para jugar en cooperativo local y detener las fuerzas del General Rumanovsky, que desea acabar con el mundo.</p>
+            <p class="square-frame"><span class="square-frame-corners" aria-hidden="true"></span>Delta Squad es un arcade de la vieja escuela dispuesto a traernos de vuelta esos momentos que todos los que crecimos en los 90 aún recordamos, pero con un aspecto visual moderno y adaptado a los nuevos tiempos.</p>
+            <p class="square-frame"><span class="square-frame-corners" aria-hidden="true"></span>Juega solo o reúne hasta 4 amigos para jugar en cooperativo local y detener las fuerzas del General Rumanovsky, que desea acabar con el mundo.</p>
           </div>
         </div>
       </div>
@@ -81,7 +82,7 @@
     <section class="work-development section-shell" aria-labelledby="development-title">
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2><p>Espacio para capturas de desarrollo y explicaciones del trabajo realizado.</p></div>
       <div class="work-development-rows">
-        <article class="work-development-row" aria-labelledby="development-stage-1">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-1"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--montage">
             <img src="assets/works/trabajo_01/1.jpg" alt="Delta Squad · 1" loading="lazy" decoding="async">
             <img src="assets/works/trabajo_01/2.jpg" alt="Delta Squad · 2" loading="lazy" decoding="async">
@@ -90,11 +91,11 @@
           </div>
           <div class="work-development-copy"><p class="work-development-stage">Fase 01</p><h3 id="development-stage-1">Set dressing en Unity</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
-        <article class="work-development-row work-development-row--reverse" aria-labelledby="development-stage-2">
+        <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-2"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--ui"><img src="assets/works/trabajo_01/Diseño UI.jpg" alt="Diseño de interfaz de usuario de Delta Squad" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><p class="work-development-stage">Fase 02</p><h3 id="development-stage-2">Diseño de interfaces</h3><p>Aquí puedes describir esta fase del desarrollo, las decisiones tomadas y tu aportación al proyecto.</p></div>
         </article>
-        <article class="work-development-row" aria-labelledby="development-stage-3">
+        <article class="work-development-row square-frame" aria-labelledby="development-stage-3"><span class="square-frame-corners" aria-hidden="true"></span>
           <div class="work-development-image work-development-image--montage">
             <img src="assets/works/trabajo_01/Escena 1.jpg" alt="Delta Squad ? 1" loading="lazy" decoding="async">
             <img src="assets/works/trabajo_01/Escena 2.jpg" alt="Delta Squad ? 2" loading="lazy" decoding="async">
@@ -107,10 +108,10 @@
     </section>
 
     <section class="work-trailer section-shell" aria-label="Tráiler de Delta Squad">
-      <video controls playsinline preload="metadata" poster="assets/works/trabajo_01/Game Logo_Wallpaper 2.jpg">
+      <div class="square-frame square-frame--player"><span class="square-frame-corners" aria-hidden="true"></span><video controls playsinline preload="metadata" poster="assets/works/trabajo_01/Game Logo_Wallpaper 2.jpg">
         <source src="assets/works/trabajo_01/TRAILER.mp4" type="video/mp4">
         Tu navegador no puede reproducir este vídeo.
-      </video>
+      </video></div>
     </section>
 
     <section class="work-gallery section-shell" aria-labelledby="gallery-title">
@@ -121,12 +122,12 @@
       </div>
       <div class="work-gallery-viewport">
         <div id="work-gallery-track" class="work-gallery-track">
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/Scenario 1, b.jpg" alt="Vista aérea de un escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 01</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/Scenario 1, c.jpg" alt="Segunda vista aérea del escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 02</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/DeltaSquad_menu.jpg" alt="Delta Squad ? Menú principal" loading="lazy" decoding="async"><figcaption><span>Menú principal</span><span>Delta Squad</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level1_DeltaSquad.jpg" alt="Delta Squad ? Nivel 1" loading="lazy" decoding="async"><figcaption><span>Nivel 1</span><span>Delta Squad</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level2_DeltaSquad.jpg" alt="Delta Squad ? Nivel 2" loading="lazy" decoding="async"><figcaption><span>Nivel 2</span><span>Delta Squad</span></figcaption></figure>
-          <figure class="work-gallery-slide"><img src="assets/works/trabajo_01/screenshot_level4_DeltaSquad.jpg" alt="Delta Squad ? Nivel 4" loading="lazy" decoding="async"><figcaption><span>Nivel 4</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/Scenario 1, b.jpg" alt="Vista aérea de un escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 01</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/Scenario 1, c.jpg" alt="Segunda vista aérea del escenario urbano de Delta Squad" loading="lazy"><figcaption><span>Escenario urbano</span><span>Vista 02</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/DeltaSquad_menu.jpg" alt="Delta Squad ? Menú principal" loading="lazy" decoding="async"><figcaption><span>Menú principal</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/screenshot_level1_DeltaSquad.jpg" alt="Delta Squad ? Nivel 1" loading="lazy" decoding="async"><figcaption><span>Nivel 1</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/screenshot_level2_DeltaSquad.jpg" alt="Delta Squad ? Nivel 2" loading="lazy" decoding="async"><figcaption><span>Nivel 2</span><span>Delta Squad</span></figcaption></figure>
+          <figure class="work-gallery-slide square-frame"><span class="square-frame-corners" aria-hidden="true"></span><img src="assets/works/trabajo_01/screenshot_level4_DeltaSquad.jpg" alt="Delta Squad ? Nivel 4" loading="lazy" decoding="async"><figcaption><span>Nivel 4</span><span>Delta Squad</span></figcaption></figure>
         </div>
       </div>
     </section>

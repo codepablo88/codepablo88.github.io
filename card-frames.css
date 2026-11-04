@@ -1,0 +1,17 @@
+/* Shared frame approved on the home page cards. */
+.square-frame{position:relative;border:1px solid rgba(255,255,255,.85)!important;border-radius:0!important;overflow:visible!important}
+.square-frame-corners{position:absolute;inset:0;z-index:6;pointer-events:none;--frame-corner-size:28px;--frame-corner-weight:8px;--frame-corner-offset:-5px}
+.square-frame-corners::before,.square-frame-corners::after{content:'';position:absolute;width:var(--frame-corner-size);height:var(--frame-corner-size);border:0 solid #fff;box-sizing:border-box}
+.square-frame-corners::before{top:var(--frame-corner-offset);left:var(--frame-corner-offset);border-top-width:var(--frame-corner-weight);border-left-width:var(--frame-corner-weight)}
+.square-frame-corners::after{right:var(--frame-corner-offset);bottom:var(--frame-corner-offset);border-right-width:var(--frame-corner-weight);border-bottom-width:var(--frame-corner-weight)}
+.square-frame-image-clip{position:absolute;inset:0;overflow:hidden}
+.projects-grid .case-study>.case-cover{border:0;border-radius:0;margin:0}
+.projects-grid .case-study.square-frame{transition:transform .35s ease,box-shadow .35s ease}
+.projects-grid .case-study.square-frame:hover,.projects-grid .case-study.square-frame:focus-within{transform:translateY(-7px);box-shadow:0 24px 55px rgba(0,0,0,.35)}
+.projects-grid .case-study.square-frame>.case-cover:hover{transform:none;box-shadow:none}
+.square-frame .work-development-image,.square-frame .work-development-image img,.square-frame .work-development-image video,.square-frame.work-gallery-slide img{border-radius:0!important}
+.projects-grid .case-study>.case-intro,.projects-grid .case-study>.project-breakdown-link,.projects-grid .case-study>.card-footer-row{margin-inline:16px}
+.square-frame .contact-call-media{border-radius:0}
+.square-frame--player>video,.square-frame--player>iframe{border:0!important;border-radius:0!important}
+@media(max-width:520px){.square-frame-corners{--frame-corner-weight:6px;--frame-corner-offset:-4px}}
+@media(prefers-reduced-motion:reduce){.projects-grid .case-study.square-frame{transition:none}.projects-grid .case-study.square-frame:hover,.projects-grid .case-study.square-frame:focus-within{transform:none}}
