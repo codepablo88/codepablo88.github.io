@@ -216,7 +216,7 @@ window.portfolioEnglish = {
   "La presentación multivista permite comprobar que la silueta y la jerarquía visual se mantienen en frontal, perfil y espalda.": "The multi-view presentation shows how the silhouette and visual hierarchy hold up from the front, side and back.",
   "Los accesorios no solo aportan narrativa: también distribuyen el peso visual del conjunto y hacen reconocible al personaje desde cualquier cámara.": "The accessories add narrative, distribute visual weight and make the character recognisable from any camera angle.",
   "Portfolio de Pablo Escribano, Technical Artist especializado en herramientas procedurales y creación 3D.": "Portfolio of Pablo Escribano, a Technical Artist specialising in procedural tools and 3D creation.",
-  "Soy Pablo Escribano, Generalista 3D, desarrollador de Unity y technical artist especializado en generación procedural y desarrollo de herramientas para entornos 3D en tiempo real, con experiencia en optimización, Unity y desarrollo de experiencias XR/VR.": "I’m Pablo Escribano, a 3D Generalist, Unity Developer and Technical Artist specialising in procedural generation and tool development for real-time 3D environments, with experience in optimisation, Unity and XR/VR experiences.",
+  "Soy Pablo Escribano, Generalista 3D, desarrollador de Unity y technical artist especializado en generación procedural y desarrollo de herramientas para entornos 3D en tiempo real, con experiencia en optimización y desarrollo de experiencias XR/VR.": "I’m Pablo Escribano, a 3D Generalist, Unity Developer and Technical Artist specialising in procedural generation and tool development for real-time 3D environments, with experience in optimisation and XR/VR experiences.",
   "Explorar proyectos": "Explore projects",
   "Trabajemos juntos ↗": "Let’s work together ↗",
   "01 / Selección": "01 / Selected projects",
@@ -503,5 +503,6 @@ window.portfolioEnglish = {
   "Artista y animador 2D": "2D artist and animator",
   "Febrero 2025": "February 2025",
   "Me licencié en Bellas Artes como artista tradicional, pasé por el concept art hasta descubrir Blender, y a día de hoy mis experiencias profesionales y la incursión de las nuevas tecnologías han reformulado mi rol y me han convertido en un technical artist. El desarrollo de juegos y aplicaciones para realidad virtual y su aportación a la sociedad son el motor sobre el que quiero asentar mi camino.": "I graduated in Fine Arts as a traditional artist, explored concept art and then discovered Blender. Today, my professional experience and the emergence of new technologies have reshaped my role and turned me into a technical artist. Developing games and virtual reality applications, and their contribution to society, are the driving forces behind the path I want to pursue.",
-  "¡Bienvenidos! Espero que os guste todo lo que aquí os enseño, y si creéis que os puedo ser de ayuda, estoy a vuestra disposición.": "Welcome! I hope you enjoy everything I share here, and if you think I could help you, I am at your disposal."
+  "¡Bienvenidos! Espero que os guste todo lo que aquí os enseño, y si creéis que os puedo ser de ayuda, estoy a vuestra disposición.": "Welcome! I hope you enjoy everything I share here, and if you think I could help you, I am at your disposal.",
+  "Copiar correo electrónico": "Copy email address"
 };
