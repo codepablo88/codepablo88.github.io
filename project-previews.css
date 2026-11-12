@@ -9,3 +9,6 @@
 @media(max-width:520px){.card-footer-row{gap:12px}.card-tools{gap:8px}.card-tools img{width:30px;height:30px}.card-footer-row .project-breakdown-link{font-size:11px}}
 
 .projects-grid .case-study>.project-breakdown-link,.projects-grid .case-study>.card-footer-row{margin-top:auto}
+
+.projects-grid>.case-study--centered{grid-column:1/-1;justify-self:center;width:calc((100% - 28px)/2)}
+@media(max-width:900px){.projects-grid>.case-study--centered{grid-column:auto;width:100%}}

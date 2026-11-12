@@ -37,7 +37,7 @@ window.portfolioEnglish = {
   "El proyecto explora cómo herramientas específicas y bien enfocadas pueden reducir fricción dentro de un pipeline 3D.": "The project explores how focused, purpose-built tools can reduce friction in a 3D pipeline.",
   "03 / Fin del proyecto": "03 / End of project",
   "¿Hablamos de": "Shall we talk about",
-  "Contactar ↗": "Get in touch ↗",
+  "Contactar": "Get in touch",
   "Volver al portfolio ↑": "Back to portfolio ↑",
   "Cozy Game — diario de desarrollo de un prototipo de Pablo Escribano.": "Cozy Game — a prototype development journal by Pablo Escribano.",
   "Trabajos": "Work",
@@ -218,7 +218,7 @@ window.portfolioEnglish = {
   "Portfolio de Pablo Escribano, Technical Artist especializado en herramientas procedurales y creación 3D.": "Portfolio of Pablo Escribano, a Technical Artist specialising in procedural tools and 3D creation.",
   "Soy Pablo Escribano, Generalista 3D, desarrollador de Unity y technical artist especializado en generación procedural y desarrollo de herramientas para entornos 3D en tiempo real, con experiencia en optimización y desarrollo de experiencias XR/VR.": "I’m Pablo Escribano, a 3D Generalist, Unity Developer and Technical Artist specialising in procedural generation and tool development for real-time 3D environments, with experience in optimisation and XR/VR experiences.",
   "Explorar proyectos": "Explore projects",
-  "Trabajemos juntos ↗": "Let’s work together ↗",
+  "Trabajemos juntos": "Let’s work together",
   "01 / Selección": "01 / Selected projects",
   "Herramientas procedurales y proyectos 3D que combinan dirección artística, automatización y producción en tiempo real.": "Procedural tools and 3D projects combining art direction, automation and real-time production.",
   "Abrir el proyecto Adaptative Medieval House Tool": "Open the Adaptative Medieval House Tool project",
@@ -437,7 +437,7 @@ window.portfolioEnglish = {
   "Enlace de ArtStation pendiente": "ArtStation link pending",
   "Tráiler de SUNU": "SUNU trailer",
   "Tráiler de Space Revenge": "Space Revenge trailer",
-  "Ver en YouTube ↗": "Watch on YouTube ↗",
+  "Ver en YouTube": "Watch on YouTube",
   "Creación de animaciones": "Animation creation",
   "Set dressing en Unity": "Set dressing in Unity",
   "Ver GIF original": "View original GIF",
@@ -504,5 +504,8 @@ window.portfolioEnglish = {
   "Febrero 2025": "February 2025",
   "Me licencié en Bellas Artes como artista tradicional, pasé por el concept art hasta descubrir Blender, y a día de hoy mis experiencias profesionales y la incursión de las nuevas tecnologías han reformulado mi rol y me han convertido en un technical artist. El desarrollo de juegos y aplicaciones para realidad virtual y su aportación a la sociedad son el motor sobre el que quiero asentar mi camino.": "I graduated in Fine Arts as a traditional artist, explored concept art and then discovered Blender. Today, my professional experience and the emergence of new technologies have reshaped my role and turned me into a technical artist. Developing games and virtual reality applications, and their contribution to society, are the driving forces behind the path I want to pursue.",
   "¡Bienvenidos! Espero que os guste todo lo que aquí os enseño, y si creéis que os puedo ser de ayuda, estoy a vuestra disposición.": "Welcome! I hope you enjoy everything I share here, and if you think I could help you, I am at your disposal.",
-  "Copiar correo electrónico": "Copy email address"
+  "Copiar correo electrónico": "Copy email address",
+  "Gran cantidad de elementos y de variación visual, con estilo propio": "A wide variety of elements and visual variation, with a distinctive style",
+  "Animación fotograma a fotograma del personaje y de cada uno de los elementos del entorno.": "Frame-by-frame animation of the character and each element of the environment.",
+  "Interacción XR · Tiempo real · Generación procedural": "XR Interaction · Real-time · Procedural Generation"
 };
