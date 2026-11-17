@@ -507,5 +507,6 @@ window.portfolioEnglish = {
   "Copiar correo electrónico": "Copy email address",
   "Gran cantidad de elementos y de variación visual, con estilo propio": "A wide variety of elements and visual variation, with a distinctive style",
   "Animación fotograma a fotograma del personaje y de cada uno de los elementos del entorno.": "Frame-by-frame animation of the character and each element of the environment.",
-  "Interacción XR · Tiempo real · Generación procedural": "XR Interaction · Real-time · Procedural Generation"
+  "Interacción XR · Tiempo real · Generación procedural": "XR Interaction · Real-time · Procedural Generation",
+  "Vídeo de Fingerboarding XR": "Fingerboarding XR video"
 };

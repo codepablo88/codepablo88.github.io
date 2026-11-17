@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="delta-overview.css">
   <style>
+    .prototype-feature-video{padding-top:48px}
+    @media(max-width:640px){.prototype-feature-video{padding-top:32px}}
     .work-development-image{padding:0;border:0;background:none}
     .work-development-copy>p:not(.work-development-stage){margin:0;color:var(--muted);font-size:14px;line-height:1.8}
     .work-development-copy>p+p{margin-top:14px}
@@ -48,23 +50,28 @@
 
   <main>
     <section class="prototype-title-hero"><div class="prototype-title-copy"><a class="back-link" href="prototyping.html#prototyping">← Volver a prototyping</a><p class="eyebrow"><span></span>XR · Prototype</p><h1 style="font-size:clamp(28px,6vw,96px);letter-spacing:-1px">FINGERBOARDING<br><em>XR</em></h1></div></section>
+    <section class="work-trailer prototype-feature-video section-shell" aria-label="Vídeo de Fingerboarding XR">
+      <div class="square-frame square-frame--player"><span class="square-frame-corners" aria-hidden="true"></span>
+        <iframe src="https://www.youtube-nocookie.com/embed/S7GpcZ3iBCU" title="Vídeo de Fingerboarding XR" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
     <section class="work-development section-shell" aria-labelledby="development-title">
       <div class="work-development-heading"><h2 id="development-title">Desarrollo</h2></div>
       <div class="work-development-rows">
         <article class="work-development-row square-frame" aria-labelledby="development-stage-1"><span class="square-frame-corners" aria-hidden="true"></span>
-          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboarding-realtime.gif" alt="Fingerboarding XR en tiempo real" loading="lazy" decoding="async"></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboarding-realtime-still.png" data-static-src="assets/prototyping/fingerboarding-xr/fingerboarding-realtime-still.png" data-preview-src="assets/prototyping/fingerboarding-xr/fingerboarding-realtime.gif" alt="Fingerboarding XR en tiempo real" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-1">Desarrollo de rampas en Unity</h3><p>Desarrollo del sistema de rampas procedurales en Unity, trabajando la forma y las proporciones de los obstáculos mediante parámetros editables. Las pruebas en el editor permiten observar cómo cambia la geometría al modificar cada ajuste.</p><p>Esta fase sienta las bases de la herramienta que después permite crear y modificar el skatepark dentro de la experiencia de realidad mixta.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-2"><span class="square-frame-corners" aria-hidden="true"></span>
-          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboardingxr.gif" alt="Interacción directa" loading="lazy" decoding="async"></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/fingerboardingxr-still.png" data-static-src="assets/prototyping/fingerboarding-xr/fingerboardingxr-still.png" data-preview-src="assets/prototyping/fingerboarding-xr/fingerboardingxr.gif" alt="Interacción directa" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-2">Interacción directa</h3><p>El jugador controla el skate virtual directamente con las manos. El contacto con los dedos sustituye a los botones y mandos convencionales, manteniendo una interacción cercana a los gestos del fingerboarding físico.</p><p>Coger la tabla, colocar los dedos e intentar un truco sucede en el mismo espacio de realidad mixta, sin cambiar de modo de interacción.</p></div>
         </article>
         <article class="work-development-row square-frame" aria-labelledby="development-stage-3"><span class="square-frame-corners" aria-hidden="true"></span>
-          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural_ramp.gif" alt="Rampas procedurales" loading="lazy" decoding="async"></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural_ramp-still.png" data-static-src="assets/prototyping/fingerboarding-xr/procedural_ramp-still.png" data-preview-src="assets/prototyping/fingerboarding-xr/procedural_ramp.gif" alt="Rampas procedurales" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-3">Física de la tabla</h3><p>El sistema de física transforma los pequeños movimientos de las manos en fuerza, rotación e impulso. La tabla responde continuamente a la acción de los dedos, a la mesa y a la geometría de cada obstáculo, en lugar de recurrir a animaciones de trucos predefinidas.</p><p>Esto hace que cada intento sea ligeramente diferente y sitúa el equilibrio, el ritmo, las colisiones y la recuperación en el centro de la experiencia.</p></div>
         </article>
         <article class="work-development-row work-development-row--reverse square-frame" aria-labelledby="development-stage-4"><span class="square-frame-corners" aria-hidden="true"></span>
-          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="Skatepark en realidad mixta" loading="lazy" decoding="async"></div>
+          <div class="work-development-image"><img src="assets/prototyping/fingerboarding-xr/procedural-skatepark-still.png" data-static-src="assets/prototyping/fingerboarding-xr/procedural-skatepark-still.png" data-preview-src="assets/prototyping/fingerboarding-xr/procedural-skatepark.gif" alt="Skatepark en realidad mixta" loading="lazy" decoding="async"></div>
           <div class="work-development-copy"><h3 id="development-stage-4">Generación procedural en tiempo real</h3><p>El entorno se construye con obstáculos procedurales en lugar de recursos fijos. Los controles integrados en la escena permiten colocar una rampa sobre la superficie física y modificar su forma y proporciones mientras la geometría se actualiza en tiempo real.</p><p>El obstáculo generado se puede utilizar de inmediato, creando un ciclo continuo entre diseño de niveles e interacción: modificar la rampa, probar un recorrido y volver a ajustarla sin salir de la realidad mixta.</p></div>
         </article>
       </div>
@@ -73,5 +80,6 @@
 
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div class="footer-social-icons"><a class="footer-icon" href="https://www.linkedin.com/in/pabloescribanobastante/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3ZM6.5 7.5A1.75 1.75 0 1 1 6.5 4a1.75 1.75 0 0 1 0 3.5ZM19 19h-3v-5c0-1.3-.3-2.2-1.5-2.2S13 12.7 13 14v5h-3V9h3v1.4c.6-1 1.5-1.7 2.8-1.7 2.4 0 3.2 1.6 3.2 4.3Z"/></svg></a><a class="footer-icon" href="https://www.youtube.com/@artpablo88" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23 7s-.2-1.7-1-2.4C21.1 3.7 20 3.7 19.5 3.6 16 3.4 12 3.4 12 3.4s-4 0-7.5.2C4 3.7 2.9 3.7 2 4.6 1.2 5.3 1 7 1 7S.8 9 .8 11v2c0 2 .2 4 .2 4s.2 1.7 1 2.4c.9.9 2.1.9 2.7 1C6.6 20.6 12 20.6 12 20.6s4 0 7.5-.3c.5 0 1.6 0 2.5-.9.8-.7 1-2.4 1-2.4s.2-2 .2-4v-2C23.2 9 23 7 23 7ZM9.6 15.8V8.2l6.6 3.8Z"/></svg></a><button class="footer-icon footer-copy-email" type="button" aria-label="Copiar correo electr?nico" title="Copiar correo electr?nico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 5h20v14H2Z"/><path d="m2 5 10 8L22 5M2 19l7-7m13 7-7-7" fill="none" stroke="var(--bg)" stroke-width="1.5"/></svg></button><a class="footer-icon" href="https://www.artstation.com/artpablo" target="_blank" rel="noopener noreferrer" aria-label="ArtStation" title="ArtStation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m0 18.5 2.1 3.6c.3.5.8.8 1.4.8h13l-2.5-4.4ZM8.3 3.7 1.5 15.5h13.7ZM11.3 1h4c.6 0 1.1.3 1.4.8l7.1 12.4c.3.5.3 1.1 0 1.6l-2.1 3.7Z"/></svg></a><a class="footer-icon" href="https://alblo-studio.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Itch.io" title="Itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 2h18l3 5v2c0 1.6-2 2.5-3.3 1.5-1.2 1-2.8 1-4 0-1.1 1-2.8 1-4 0-1.1 1-2.8 1-4 0-1.1 1-2.8 1-4 0C2.7 11.8 0 11 0 9V7Zm0 11c1 .2 2 0 3-.4 2 .8 4 .8 6 0 2 .8 4 .8 6 0 1 .4 2 .6 3 .4v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6 2-2 4h2l1-1h4l1 1h2l-2-4-2-1h-2Z"/></svg></a></div><span class="footer-copy-status" role="status" aria-live="polite"></span><div class="footer-nav"><a href="index.html">Inicio</a></div></footer>
 
+  <script src="project-previews.js"></script>
 </body>
 </html>
