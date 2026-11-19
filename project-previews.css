@@ -12,3 +12,5 @@
 
 .projects-grid>.case-study--centered{grid-column:1/-1;justify-self:center;width:calc((100% - 28px)/2)}
 @media(max-width:900px){.projects-grid>.case-study--centered{grid-column:auto;width:100%}}
+
+.card-tools .card-tool-monochrome{filter:brightness(0) invert(1)}
