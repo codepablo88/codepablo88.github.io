@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="delta-overview.css">
   <style>
+    .prototype-competition{padding-top:48px}
+    .prototype-competition h2{margin:0 0 24px;font:clamp(26px,3vw,42px)/1.2 var(--display);letter-spacing:-1px}
+    .prototype-competition p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}
+    .prototype-competition p+p{margin-top:20px}
+    .prototype-competition a{color:var(--acid);text-decoration:underline;text-underline-offset:4px}
+    @media(max-width:640px){.prototype-competition{padding-top:32px}}
     .prototype-feature-video{padding-top:48px}
     @media(max-width:640px){.prototype-feature-video{padding-top:32px}}
     .work-development-image{padding:0;border:0;background:none}
@@ -28,6 +34,7 @@
   <link rel="icon" type="image/png" href="assets/logo/favicon.png?v=3">
   <link rel="stylesheet" href="card-frames.css">
   <link rel="stylesheet" href="footer-icons.css">
+  <link rel="stylesheet" href="vimeo-controls.css">
   <script src="footer-icons.js" defer></script>
 </head>
 <body>
@@ -50,9 +57,21 @@
 
   <main>
     <section class="prototype-title-hero"><div class="prototype-title-copy"><a class="back-link" href="prototyping.html#prototyping">← Volver a prototyping</a><p class="eyebrow"><span></span>XR · Prototype</p><h1 style="font-size:clamp(28px,6vw,96px);letter-spacing:-1px">FINGERBOARDING<br><em>XR</em></h1></div></section>
+    <section class="prototype-competition section-shell" aria-labelledby="competition-title">
+      <h2 id="competition-title">Meta VR Start Developer Competition 2026</h2>
+      <p>Creado para la hackatón, este prototipo explora cómo puede funcionar el fingerboarding en realidad mixta. Los jugadores controlan un monopatín virtual con los dedos y dan forma a un skatepark directamente sobre una mesa física, convirtiendo una afición manual y familiar en una experiencia XR interactiva.</p>
+      <p>Me encargué de la generación procedural, el modelado de los objetos y el diseño de la interfaz. Mi compañero se encargó del desarrollo en Unity, la implementación técnica, las pruebas y la optimización del rendimiento, y trabajamos juntos desde el concepto hasta la versión final. <a href="https://devpost.com/software/fingerboarding-xr" target="_blank" rel="noopener noreferrer">Ver la página oficial del proyecto en Devpost.</a></p>
+    </section>
     <section class="work-trailer prototype-feature-video section-shell" aria-label="Vídeo de Fingerboarding XR">
-      <div class="square-frame square-frame--player"><span class="square-frame-corners" aria-hidden="true"></span>
-        <iframe src="https://player.vimeo.com/video/1248270150" title="Vídeo de Fingerboarding XR" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <div class="square-frame square-frame--player vimeo-clean-player"><span class="square-frame-corners" aria-hidden="true"></span>
+        <iframe id="fingerboard-vimeo" src="https://player.vimeo.com/video/1248270150?controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;vimeo_logo=0" title="Vídeo de Fingerboarding XR" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <div class="vimeo-custom-controls" hidden>
+          <button type="button" data-video-play aria-label="Reproducir">▶</button>
+          <input type="range" data-video-seek min="0" max="100" value="0" step="0.1" aria-label="Posición del vídeo">
+          <button type="button" data-video-mute aria-label="Silenciar">♪</button>
+          <button type="button" data-video-fullscreen aria-label="Pantalla completa">⛶</button>
+        </div>
+        <p class="vimeo-video-status sr-only" role="status" aria-live="polite"></p>
       </div>
     </section>
     <section class="work-development section-shell" aria-labelledby="development-title">
@@ -81,5 +100,7 @@
   <footer class="site-footer section-shell"><p>© 2026 Pablo Escribano</p><div class="footer-social-icons"><a class="footer-icon" href="https://www.linkedin.com/in/pabloescribanobastante/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3ZM6.5 7.5A1.75 1.75 0 1 1 6.5 4a1.75 1.75 0 0 1 0 3.5ZM19 19h-3v-5c0-1.3-.3-2.2-1.5-2.2S13 12.7 13 14v5h-3V9h3v1.4c.6-1 1.5-1.7 2.8-1.7 2.4 0 3.2 1.6 3.2 4.3Z"/></svg></a><a class="footer-icon" href="https://www.youtube.com/@artpablo88" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23 7s-.2-1.7-1-2.4C21.1 3.7 20 3.7 19.5 3.6 16 3.4 12 3.4 12 3.4s-4 0-7.5.2C4 3.7 2.9 3.7 2 4.6 1.2 5.3 1 7 1 7S.8 9 .8 11v2c0 2 .2 4 .2 4s.2 1.7 1 2.4c.9.9 2.1.9 2.7 1C6.6 20.6 12 20.6 12 20.6s4 0 7.5-.3c.5 0 1.6 0 2.5-.9.8-.7 1-2.4 1-2.4s.2-2 .2-4v-2C23.2 9 23 7 23 7ZM9.6 15.8V8.2l6.6 3.8Z"/></svg></a><button class="footer-icon footer-copy-email" type="button" aria-label="Copiar correo electr?nico" title="Copiar correo electr?nico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 5h20v14H2Z"/><path d="m2 5 10 8L22 5M2 19l7-7m13 7-7-7" fill="none" stroke="var(--bg)" stroke-width="1.5"/></svg></button><a class="footer-icon" href="https://www.artstation.com/artpablo" target="_blank" rel="noopener noreferrer" aria-label="ArtStation" title="ArtStation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m0 18.5 2.1 3.6c.3.5.8.8 1.4.8h13l-2.5-4.4ZM8.3 3.7 1.5 15.5h13.7ZM11.3 1h4c.6 0 1.1.3 1.4.8l7.1 12.4c.3.5.3 1.1 0 1.6l-2.1 3.7Z"/></svg></a><a class="footer-icon" href="https://alblo-studio.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Itch.io" title="Itch.io"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 2h18l3 5v2c0 1.6-2 2.5-3.3 1.5-1.2 1-2.8 1-4 0-1.1 1-2.8 1-4 0-1.1 1-2.8 1-4 0-1.1 1-2.8 1-4 0C2.7 11.8 0 11 0 9V7Zm0 11c1 .2 2 0 3-.4 2 .8 4 .8 6 0 2 .8 4 .8 6 0 1 .4 2 .6 3 .4v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6 2-2 4h2l1-1h4l1 1h2l-2-4-2-1h-2Z"/></svg></a></div><span class="footer-copy-status" role="status" aria-live="polite"></span><div class="footer-nav"><a href="index.html">Inicio</a></div></footer>
 
   <script src="project-previews.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="vimeo-controls.js"></script>
 </body>
 </html>

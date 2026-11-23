@@ -46,6 +46,8 @@
 .directory-card--framed:hover,.directory-card--framed:focus-visible{border-color:rgba(255,255,255,.85);box-shadow:0 24px 55px rgba(0,0,0,.35)}
 
 /* Keep the hover area still while both framed faces turn together. */
+.hero h1{font-weight:600}
+.hero h1 em{-webkit-text-stroke-width:1px}
 .hero-art--flip{perspective:1200px;border:0;background:none;isolation:auto}
 .hero-art--flip::after{display:none}
 .portrait-flip-inner{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.2,.65,.3,1)}
